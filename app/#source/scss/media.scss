@@ -19,10 +19,13 @@
 		}
 	}
 	.header-main__lang-img:hover {
-		box-shadow: 0 0 4px 3px;
+		box-shadow: 0 0 4px 3px #000;
 	}
 	.logo__img:hover {
 		animation: logo_img linear 2s 0s infinite;
+	}
+	.footer-main__lang-img:hover {
+		box-shadow: 0 0 4px 3px #fff;
 	}
 }
 @keyframes logo_img {

@@ -1,3 +1,4 @@
+// анимация заглавия возле логотипа
 var TxtRotate = function (el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;
@@ -54,3 +55,20 @@ window.onload = function () {
 	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
 	document.body.appendChild(css);
 };
+
+// показать больше/меньше about
+function myFunction() {
+	var aboutDots = document.getElementById("about__dots");
+	var aboutMoreText = document.getElementById("about__more");
+	var aboutBtnText = document.getElementById("about__btn");
+
+	if (aboutDots.style.display === "none") {
+		aboutDots.style.display = "inline";
+		aboutBtnText.innerHTML = "Далее...";
+		aboutMoreText.style.display = "none";
+	} else {
+		aboutDots.style.display = "none";
+		aboutBtnText.innerHTML = "Скрыть";
+		aboutMoreText.style.display = "inline";
+	}
+}
