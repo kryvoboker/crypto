@@ -1,0 +1,64 @@
+// =====================================footer================================
+.footer {
+	& .container {
+		background-color: #000000c9;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&-menu-main {
+		&__list {
+			@extend .menu-main__list;
+		}
+		&__item {
+			@extend .menu-main__item;
+		}
+		&__link {
+			@extend .menu-main__link;
+			color: #fff;
+		}
+	}
+	&-main {
+		&__inner {
+			@extend .header-main__inner;
+			padding: 20px;
+		}
+		&__row {
+			@extend .header-main__row;
+		}
+		&__telegramm-link {
+			&::before {
+				color: #fff;
+			}
+			@extend .header-main__telegramm-link;
+		}
+		&__auth {
+			@extend .header-main__auth;
+		}
+		&__auth-link {
+			&:last-child {
+				border-color: #fff;
+			}
+			@extend .header-main__auth-link;
+			color: #fff;
+		}
+		&__lang {
+			@extend .header-main__lang;
+		}
+		&__lang-btn {
+			@extend .header-main__lang-btn;
+		}
+		&__lang-img {
+			@extend .header-main__lang-img;
+		}
+	}
+	&-main__copy {
+		font-family: $Open_Sans;
+		font-size: 16px;
+		text-align: center;
+		line-height: 20px;
+		letter-spacing: .5px;
+		color: #fff;
+		padding: 20px;
+	}
+}
+// =====================================footer================================

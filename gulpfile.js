@@ -10,6 +10,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
+const fileinclude = require('gulp-file-include');
 
 function browsersync() {
 	browserSync.init({
@@ -53,6 +54,11 @@ function scripts() {
 		// 'app/js/select.js',
 		'app/js/main.js'
 	])
+		.pipe(fileinclude(
+			{
+				prefix: '@@',
+				basepath: '@file'
+			}))
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(dest('app/js'))

@@ -1,0 +1,50 @@
+// =====================================deposit===============================
+.deposit {
+	&__title {
+		font-family: $Lato;
+		font-weight: 700;
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	&-grid {
+		display: flex;
+		border-radius: 15px;
+		background-color: #fff;
+		padding: 20px;
+
+		&__row {
+			flex: 0 1 33.333%;
+			display: grid;
+			grid-template-columns: minmax(85px, 150px) minmax(70px, 100px) 1fr;
+			grid-template-rows: repeat(5, 1fr);
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			grid-row-gap: 25px;
+			grid-column-gap: 5px;
+		}
+		&__item {
+			font-size: 16px;
+			font-weight: 500;
+		}
+		&__item--left {
+			justify-self: stretch;
+		}
+		&__item--fw--bold {
+			font-weight: 700;
+			justify-self: stretch;
+
+			&::before {
+				font-family: 'icomoon';
+				content: "\e901";
+				color: #21ba72;
+			}
+		}
+		&__img {
+			width: 35px;
+			height: auto;
+		}
+	}
+}
+// =====================================deposit===============================

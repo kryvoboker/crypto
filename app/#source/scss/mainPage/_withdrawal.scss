@@ -1,0 +1,25 @@
+// =====================================withdrawal============================
+.withdrawal {
+	&__title {
+		@extend .deposit__title;
+	}
+	&-grid {
+		@extend .deposit-grid;
+
+		&__row {
+			@extend .deposit-grid__row;
+		}
+		&__item {
+			@extend .deposit-grid__item;
+		}
+		&__img {
+			@extend .deposit-grid__img;
+		}
+	}
+	.deposit-grid__item--fw--bold::before {
+		display: inline-block;
+		color: rgb(255, 5, 5);
+		transform: rotate(180deg);
+	}
+}
+// =====================================withdrawal============================

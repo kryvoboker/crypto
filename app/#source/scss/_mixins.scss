@@ -1,0 +1,15 @@
+// =====================================МИКСИНЫ==============================
+@mixin background-img($file, $repeat ,$position...) {
+	background-image: url($file);
+	background-position: $position;
+	background-repeat: $repeat;
+}
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 280;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 280px) / #{$maxWidth}));
+}
+@mixin adaptiv-height($heightSize, $plusHeightSize) {
+	height: calc(100vh - (#{$heightSize + px} + #{$plusHeightSize + px}));
+}
+// =====================================МИКСИНЫ==============================

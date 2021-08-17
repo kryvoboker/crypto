@@ -1,0 +1,109 @@
+// =====================================header-main==========================
+.header-main {
+	&__row:last-child {
+		display: flex;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		min-height: 100px;
+		height: 100%;
+	}
+	&__telegramm-link::before {
+		content: "\e900";
+		font-family: 'icomoon';
+		font-size: 26px;
+		color: #000;
+		transition: all .5s ease;
+	}
+	&__auth {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 180px;
+		margin-left: 50px;
+
+		&-link {
+			position: relative;
+			font-size: 16px;
+			color: #000;
+			transition: all .5s ease;
+
+			&::before {
+				position: absolute;
+				content: '';
+				bottom: -5px;
+				left: -2%;
+				right: -2%;
+				border-bottom: 3px solid $blue;
+				transform: scale(0);
+				transition: all .5s ease;
+			}
+			&:last-child::before {
+				left: 10%;
+				right: -2%;
+			}
+		}
+		&-link:last-child {
+			border-left: 1px solid #000;
+			padding-left: 14px;
+		}
+	}
+	&__lang {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 50px;
+	}
+	&__lang-btn:last-child {
+		margin-left: 10px;
+	}
+	&__lang-img {
+		width: 50px;
+		height: 25px;
+		box-shadow: 0 0 0 0 transparent;
+		transition: all .3s ease 0s;
+	}
+}
+
+// =====================================menu-main============================
+.menu-main {
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item:not(:first-child) {
+		margin-left: 10px;
+	}
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+	&__item {
+		position: relative;
+		padding: 15px 5px;
+
+		&::before {
+			position: absolute;
+			content: '';
+			bottom: 3px;
+			left: 10%;
+			right: 10%;
+			border-bottom: 3px solid $blue;
+			transform: scale(0);
+			transition: all .5s ease;
+		}
+	}
+	&__link {
+		font-family: $Montserrat;
+		font-weight: 500;
+		font-size: 16px;
+		color: #000;
+		transition: all .5s;
+	}
+}
+// =====================================menu-main============================
+
+// =====================================header-main==========================
