@@ -34,7 +34,9 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-.logo {
+.logo,
+.question,
+.plans {
 	margin-bottom: 50px;
 }
 .statistic,
@@ -58,6 +60,21 @@ body {
 	&:active {
 		background-color: #fff;
 	}
+}
+.border-style {
+	border: 3px solid rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 0 3px 5px 2px;
+}
+.title {
+	font-family: $Lato;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0 0 50px 18px;
 }
 
 

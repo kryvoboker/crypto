@@ -1,0 +1,61 @@
+.referrals {
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-auto-flow: dense;
+		grid-template-areas: 'first third fifth' 'second second second';
+		align-items: center;
+		grid-row-gap: 20px;
+	}
+	&__title {
+		font-family: $Roboto;
+		font-size: 30px;
+		font-weight: 600;
+		text-align: center;
+		cursor: pointer;
+		transition: background-color .5s;
+		padding: 20px 30px;
+
+		&:hover {
+			background-color: rgba(63,61,61,0.274);
+		}
+		&.active {
+			background-color: rgba(63,61,61,0.274);
+		}
+	}
+	&__text {
+		display: none;
+		font-family: $Montserrat;
+		font-size: 20px;
+		line-height: 25px;
+		letter-spacing: 0.5px;
+		padding: 20px;
+
+		&.show {
+			display: block;
+		}
+	}
+	&__title--first {
+		grid-area: first;
+		margin-right: 20px;
+	}
+	&__title--third {
+		grid-area: third;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	&__title--fifth {
+		grid-area: fifth;
+		margin-left: 20px;
+	}
+	&__text--second {
+		grid-area: second;
+	}
+	&__text--fourth {
+		grid-area: second;
+	}
+	&__text--sixth {
+		grid-area: second;
+	}
+}

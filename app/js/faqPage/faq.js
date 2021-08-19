@@ -29,13 +29,19 @@ for (let i = 0; i < titles.length; i++) {
 	};
 }
 
-document.querySelector('.question__btn').onclick = function () {
-	document.querySelector('.question__inner').classList.remove('active');
-	document.querySelector('.question__row+.question__row').classList.remove('active');
-	text.forEach(el => {
-		el.classList.remove('active');
-	});
-	titles.forEach(el => {
-		el.classList.remove('active');
-	});
-};
+
+const questBtn = document.querySelector('.question__btn');
+
+if (questBtn) {
+
+	questBtn.onclick = function () {
+		document.querySelector('.question__inner').classList.remove('active');
+		document.querySelector('.question__row+.question__row').classList.remove('active');
+		text.forEach(el => {
+			el.classList.remove('active');
+		});
+		titles.forEach(el => {
+			el.classList.remove('active');
+		});
+	};
+}
