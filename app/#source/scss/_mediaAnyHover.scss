@@ -8,7 +8,8 @@
 			color: #1ed2f4;
 		}
 	}
-	.header-main__telegramm-link:hover::before {
+	.header-main__telegramm-link:hover::before,
+	.contacts__link--viber:hover::before {
 		color: #1ed2f4;
 	}
 	.header-main__auth-link:hover {

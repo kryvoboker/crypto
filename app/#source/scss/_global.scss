@@ -37,7 +37,9 @@ body {
 .logo,
 .question,
 .plans,
-.reviews {
+.reviews,
+.contacts,
+.form {
 	margin-bottom: 50px;
 }
 .statistic,
@@ -47,6 +49,14 @@ body {
 	margin: 50px 0;
 }
 
+.header-main__telegramm-link::before,
+.contacts__link--viber::before {
+	content: "\e900";
+	font-family: 'icomoon';
+	font-size: 26px;
+	color: #000;
+	transition: all .5s ease;
+}
 .button {
 	width: 100%;
 	font-family: $Open_Sans;
@@ -76,6 +86,13 @@ body {
 	letter-spacing: 1px;
 	text-align: center;
 	margin: 0 0 50px 18px;
+}
+.contacts__label,
+.form__label {
+	display: inline-block;
+	font-family: $Roboto;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 

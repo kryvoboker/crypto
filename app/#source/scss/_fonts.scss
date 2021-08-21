@@ -31,11 +31,11 @@
 
   @font-face {
 	font-family: 'icomoon';
-	src:  url('../fonts/caret_down/icomoon.eot?eptigb');
-	src:  url('../fonts/caret_down/icomoon.eot?eptigb#iefix') format('embedded-opentype'),
-	  url('../fonts/caret_down/icomoon.ttf?eptigb') format('truetype'),
-	  url('../fonts/caret_down/icomoon.woff?eptigb') format('woff'),
-	  url('../fonts/caret_down/icomoon.svg?eptigb#icomoon') format('svg');
+	src:  url('../fonts/caret_down/icomoon.eot?et9e6c');
+	src:  url('../fonts/caret_down/icomoon.eot?et9e6c#iefix') format('embedded-opentype'),
+	  url('../fonts/caret_down/icomoon.ttf?et9e6c') format('truetype'),
+	  url('../fonts/caret_down/icomoon.woff?et9e6c') format('woff'),
+	  url('../fonts/caret_down/icomoon.svg?et9e6c#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -56,6 +56,9 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-viber:before {
+	content: "\e902";
+  }
   .icon-triangle-down:before {
 	content: "\e901";
   }

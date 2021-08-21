@@ -1,0 +1,48 @@
+.form {
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr auto;
+		grid-template-areas: 'first second' 'third third';
+		grid-row-gap: 20px;
+		grid-column-gap: 20px;
+		padding: 20px;
+	}
+	&__item {
+		&:first-child {
+			grid-area: first;
+		}
+		&:nth-child(2) {
+			grid-area: second;
+			padding-bottom: 25px;
+
+			& textarea {
+				width: 100%;
+				height: 100%;
+				resize: none;
+			}
+		}
+	}
+	&__label {
+		display: block;
+		margin-bottom: 10px;
+	}
+	&__input {
+		width: 100%;
+		height: 50px;
+		border: 1px solid #000;
+		border-radius: 5px;
+		font-family: $Montserrat;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.5px;
+		padding: 5px;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	&__btn {
+		grid-area: third;
+	}
+}

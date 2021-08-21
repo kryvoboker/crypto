@@ -11,13 +11,6 @@
 		min-height: 100px;
 		height: 100%;
 	}
-	&__telegramm-link::before {
-		content: "\e900";
-		font-family: 'icomoon';
-		font-size: 26px;
-		color: #000;
-		transition: all .5s ease;
-	}
 	&__auth {
 		display: flex;
 		justify-content: space-between;
