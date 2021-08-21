@@ -1,0 +1,32 @@
+.auth {
+	&__inner {
+		display: grid;
+		grid-template-columns: 500px 500px;
+		grid-template-rows: 500px;
+		justify-content: center;
+		grid-column-gap: 100px;
+	}
+	&__form {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr auto auto;
+		row-gap: 20px;
+		padding: 20px;
+	}
+	&__form-title {
+		font-family: $Roboto;
+		font-size: 35px;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&__label {
+		display: block;
+		margin-bottom: 10px;
+	}
+	&__btn--lost {
+		text-align: center;
+		color: #000;
+		background-color: #f44336;
+	}
+}

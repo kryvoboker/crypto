@@ -39,7 +39,9 @@ body {
 .plans,
 .reviews,
 .contacts,
-.form {
+.form,
+.auth,
+.lost {
 	margin-bottom: 50px;
 }
 .statistic,
@@ -88,11 +90,33 @@ body {
 	margin: 0 0 50px 18px;
 }
 .contacts__label,
-.form__label {
+.form__label,
+.auth__label {
 	display: inline-block;
 	font-family: $Roboto;
 	font-size: 16px;
 	font-weight: 600;
+}
+.form__input,
+.auth__input,
+.lost__input {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-family: $Montserrat;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	transition: border .5s;
+	padding: 5px;
+
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	&:focus {
+		border: 3px solid #1ed2f4;
+	}
 }
 
 
