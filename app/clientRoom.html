@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Кабинет</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,600;0,700;1,400&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		@@include('./parts/clientRoom/_header.html')
+
+		<main class="main">
+			<div class="container">
+				<div class="room__inner">
+					<section class="room__balance">
+						<h2 class="room__balance-title">Баланс</h2>
+						<div class="room__balance-inner">
+							<div class="room__balance-item">
+								<div class="room__balance-box">
+									<p class="room__balance-text">
+										Депозит - 0.00000000
+									</p>
+									<p class="room__balance-text">
+										Perfect Money - 0.00000000$
+									</p>
+									<div class="room__balance-icon"></div>
+									<p class="room__balance-text">
+										Payeer - 0.00000000$
+									</p>
+									<div class="room__balance-icon"></div>
+									<p class="room__balance-text">
+										Web Money - 0.00000000$
+									</p>
+									<div class="room__balance-icon"></div>
+									<p class="room__balance-text">
+										BTC - 0.00000000$
+									</p>
+									<div class="room__balance-icon"></div>
+								</div>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Пополнить баланс
+								</a>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Вывести деньги
+								</a>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Мои депозиты
+								</a>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Мои рефералы
+								</a>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Служба поддержки
+								</a>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Оставить отзыв
+								</a>
+							</div>
+							<div class="room__balance-item">
+								<a class="room__balance-link" href="#">
+									Настройки
+								</a>
+							</div>
+						</div>
+					</section>
+					<section class="room__body">
+
+					</section>
+				</div>
+			</div>
+		</main>
+
+		@@include('./parts/_footer.html')
+
+	</div>
+
+	@@include('./parts/_scripts.html')
+</body>
+
+</html>

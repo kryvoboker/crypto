@@ -1,0 +1,17 @@
+.header-main__auth-link--center {
+	&:first-child::before {
+		left: -2%;
+		right: 6%;
+	}
+	&:last-child::before {
+		left: 16%;
+		right: -9%;
+	}
+	&:first-child.active {
+		color: rgb(21, 212, 21);
+	}
+	&:first-child.active::before {
+		border-color: rgb(21, 212, 21);
+	}
+	
+}

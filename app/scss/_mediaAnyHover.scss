@@ -1,11 +1,9 @@
 @media (any-hover:hover) {
-	.menu-main__item:hover {
-
+	.menu-main__link:hover {
+		color: #1ed2f4;
+		
 		&::before {
 			transform: scale(1);
-		}
-		.menu-main__link {
-			color: #1ed2f4;
 		}
 	}
 	.header-main__telegramm-link:hover::before,
@@ -18,6 +16,13 @@
 
 		&::before {
 			transform: scale(1);
+		}
+	}
+	.header-main__auth-link--center:last-child:hover {
+		color: rgb(199, 14, 14);
+
+		&::before {
+			border-color: rgb(199, 14, 14);
 		}
 	}
 	.header-main__lang-img:hover {
