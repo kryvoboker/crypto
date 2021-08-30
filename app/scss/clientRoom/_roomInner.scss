@@ -1,0 +1,6 @@
+.room__inner {
+	display: grid;
+	grid-template-columns: 350px 1fr;
+	grid-template-rows: 1fr;
+	column-gap: 10px;
+}

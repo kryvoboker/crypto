@@ -1,5 +1,6 @@
 @@include('./functions.js');
 @@include('./activeMenu.js');
+@@include('./select.js');
 
 // =====================================main-page=============================
 @@include('./mainPage/logo.js');

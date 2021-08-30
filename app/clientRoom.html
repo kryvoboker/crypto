@@ -22,30 +22,52 @@
 		<main class="main">
 			<div class="container">
 				<div class="room__inner">
-					<section class="room__balance">
-						<h2 class="room__balance-title">Баланс</h2>
+					<section class="room__balance border-style">
+						<h2 class="room__balance-title client-title">Баланс</h2>
 						<div class="room__balance-inner">
 							<div class="room__balance-item">
 								<div class="room__balance-box">
-									<p class="room__balance-text">
-										Депозит - 0.00000000
-									</p>
-									<p class="room__balance-text">
-										Perfect Money - 0.00000000$
-									</p>
-									<div class="room__balance-icon"></div>
-									<p class="room__balance-text">
-										Payeer - 0.00000000$
-									</p>
-									<div class="room__balance-icon"></div>
-									<p class="room__balance-text">
-										Web Money - 0.00000000$
-									</p>
-									<div class="room__balance-icon"></div>
-									<p class="room__balance-text">
-										BTC - 0.00000000$
-									</p>
-									<div class="room__balance-icon"></div>
+									<div class="room__balance-row">
+										<p class="room__balance-text">
+											<span>Депозит</span> - 0.00000000$
+										</p>
+									</div>
+									<div class="room__balance-row">
+										<p class="room__balance-text">
+											<span>Perfect Money</span> - 0.00000000$
+										</p>
+										<div class="room__balance-icon" style="background-image: url('img/icons/deposit/sprite.png');
+									background-size: cover;
+									background-repeat: no-repeat;
+									background-position: 3% 0;"></div>
+									</div>
+									<div class="room__balance-row">
+										<p class="room__balance-text">
+											<span>Payeer</span> - 0.00000000$
+										</p>
+										<div class="room__balance-icon" style="background-image: url('img/icons/deposit/sprite.png');
+									background-size: cover;
+									background-repeat: no-repeat;
+									background-position: 22% 0;"></div>
+									</div>
+									<div class="room__balance-row">
+										<p class="room__balance-text">
+											<span>Web Money</span> - 0.00000000$
+										</p>
+										<div class="room__balance-icon" style="background-image: url('img/icons/deposit/sprite.png');
+									background-size: cover;
+									background-repeat: no-repeat;
+									background-position: 97% 0;"></div>
+									</div>
+									<div class="room__balance-row">
+										<p class="room__balance-text">
+											<span>BTC</span> - 0.00000000$
+										</p>
+										<div class="room__balance-icon" style="background-image: url('img/icons/deposit/sprite.png');
+									background-size: cover;
+									background-repeat: no-repeat;
+									background-position: 78% 0;"></div>
+									</div>
 								</div>
 							</div>
 							<div class="room__balance-item">
@@ -59,7 +81,7 @@
 								</a>
 							</div>
 							<div class="room__balance-item">
-								<a class="room__balance-link" href="#">
+								<a class="room__balance-link" href="clientRoom.html">
 									Мои депозиты
 								</a>
 							</div>
@@ -86,7 +108,30 @@
 						</div>
 					</section>
 					<section class="room__body">
+						<div class="room__body-inner">
+							<h1 class="room__body-title title">Депозит</h1>
+							<div class="room__body-item">
+								<form class="room__body-form border-style" action="#">
+									<h4 class="room__body-form-title client-title">Открыть новый депозит</h4>
+									<div class="room__body-select-box">
+										<div class="room__body-label">Виберете кошелёк</div>
+										<select class="room__body-select" name="wallet">
+											<option value="Выбрать кошелёк" selected>Выбрать кошелёк</option>
+											<option value="Perfect Money">Perfect Money</option>
+											<option value="Payeer">Payeer</option>
+											<option value="Web Money">Web Money</option>
+											<option value="BTC">BTC</option>
+										</select>
+									</div>
+									<input class="room__body-input" type="number" placeholder="Сумма...">
+									<button class="room__body-btn button">Открыть депозит</button>
+								</form>
+							</div>
+							<h2 class="room__body-title title">Активные депозиты</h2>
+							<div class="room__body-item border-style">
 
+							</div>
+						</div>
 					</section>
 				</div>
 			</div>

@@ -41,7 +41,8 @@ body {
 .contacts,
 .form,
 .auth,
-.lost {
+.lost,
+.room__inner {
 	margin-bottom: 50px;
 }
 .statistic,
@@ -80,7 +81,8 @@ body {
 	background-color: #fff;
 	box-shadow: 0 3px 5px 2px;
 }
-.title {
+.title,
+.client-title {
 	font-family: $Lato;
 	font-size: 50px;
 	font-weight: 700;
@@ -88,6 +90,10 @@ body {
 	letter-spacing: 1px;
 	text-align: center;
 	margin: 0 0 50px 18px;
+}
+.client-title {
+	font-size: 25px;
+	margin: 0 0 20px 0;
 }
 .contacts__label,
 .form__label,

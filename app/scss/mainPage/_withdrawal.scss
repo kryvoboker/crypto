@@ -25,8 +25,6 @@
 .withdrawal-grid__item--background {
 	width: 37px;
 	height: 35px;
-	@include background-img('../img/icons/deposit/sprite.png', no-repeat, 0 0);
-	background-size: cover;
 
 	&.wm {
 		background-position: 97% 0;

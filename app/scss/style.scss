@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import "nullStyle";
+@import "select";
 @import 'libs';
 @import 'mixins';
 @import 'global';
@@ -43,6 +44,9 @@
 
 // =====================================clientRoom-page=======================
 @import 'clientRoom/authLink';
+@import 'clientRoom/roomInner';
+@import 'clientRoom/roomBalance';
+@import 'clientRoom/roomBody';
 // =====================================clientRoom-page=======================
 
 @import "mediaAnyHover";

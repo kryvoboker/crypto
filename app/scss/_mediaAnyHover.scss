@@ -1,6 +1,6 @@
 @media (any-hover:hover) {
 	.menu-main__link:hover {
-		color: #1ed2f4;
+		color: $blue;
 		
 		&::before {
 			transform: scale(1);
@@ -9,10 +9,10 @@
 	.header-main__telegramm-link:hover::before,
 	.contacts__link--viber:hover::before,
 	.contacts__link:hover {
-		color: #1ed2f4;
+		color: $blue;
 	}
 	.header-main__auth-link:hover {
-		color: #1ed2f4;
+		color: $blue;
 
 		&::before {
 			transform: scale(1);
@@ -33,6 +33,13 @@
 	}
 	.footer-main__lang-img:hover {
 		box-shadow: 0 0 4px 3px #fff;
+	}
+	.question__item-title:hover::before,
+	.room__balance-item:hover::before {
+		left: 0;
+	}
+	.room__body-inner .select__option:hover {
+		background-color: $blue;
 	}
 }
 @keyframes logo_img {
