@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Кабинет</title>
+	<title>Пополнить баланс</title>
 	@@include('./parts/_headLinks.html')
 </head>
 
 <body>
+
 	<div class="wrapper">
 
 		@@include('./parts/clientRoom/_header.html')
@@ -22,10 +23,9 @@
 					</section>
 					<section class="room__body">
 						<div class="room__body-inner">
-							<h1 class="room__body-title title">Депозит</h1>
+							<h1 class="room__body-title title">Пополнение баланса</h1>
 							<div class="room__body-item">
 								<form class="room__body-form border-style" action="#">
-									<h4 class="room__body-form-title client-title">Открыть новый депозит</h4>
 									<div class="room__body-select-box">
 										<div class="room__body-label">Виберете кошелёк</div>
 										<select class="room__body-select" name="wallet">
@@ -37,10 +37,10 @@
 										</select>
 									</div>
 									<input class="room__body-input" type="number" placeholder="Сумма...">
-									<button class="room__body-btn button">Открыть депозит</button>
+									<button class="room__body-btn button">Пополнить баланс</button>
 								</form>
 							</div>
-							<h2 class="room__body-title title">Активные депозиты</h2>
+							<h2 class="room__body-title title">История пополнений</h2>
 							<div class="room__body-item border-style">
 
 							</div>
@@ -55,6 +55,7 @@
 	</div>
 
 	@@include('./parts/_scripts.html')
+
 </body>
 
 </html>

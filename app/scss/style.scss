@@ -1,9 +1,9 @@
 @import 'vars';
 @import 'fonts';
+@import 'mixins';
 @import "nullStyle";
 @import "select";
 @import 'libs';
-@import 'mixins';
 @import 'global';
 
 // =====================================main-page=============================
@@ -47,6 +47,7 @@
 @import 'clientRoom/roomInner';
 @import 'clientRoom/roomBalance';
 @import 'clientRoom/roomBody';
+@import 'clientRoom/referrals';
 // =====================================clientRoom-page=======================
 
 @import "mediaAnyHover";

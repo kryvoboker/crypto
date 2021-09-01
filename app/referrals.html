@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пополнить баланс</title>
+	@@include('./parts/_headLinks.html')
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		@@include('./parts/clientRoom/_header.html')
+
+		<main class="main">
+			<div class="container">
+				<div class="room__inner">
+					<section class="room__balance border-style">
+						@@include('./parts/clientRoom/_roomBalance.html')
+					</section>
+					<section class="room__body">
+						<div class="room__body-inner room__body-inner--rows-three">
+							<h1 class="room__body-title title">Мои рефералы</h1>
+							<div class="room__body-item">
+								<div class="room__body-ref-link border-style">
+									<div class="room__body-ref-text">
+										<p>Ваша реферальная ссылка:
+											<span id="copyLink">http://r-krivobok-dev.com/crypto/index.html</span>
+										</p>
+										<button class="button" onclick="CopyToClipboard('copyLink')">Скопировать
+											ссылку</button>
+									</div>
+								</div>
+							</div>
+							<div class="room__body-item">
+								<div class="room__body-ref-list border-style">
+									<p class="room__body-ref-item">srokki</p>
+									<p class="room__body-ref-item">123456rokki</p>
+									<p class="room__body-ref-item">rokki</p>
+									<p class="room__body-ref-item">FGBrokki</p>
+									<p class="room__body-ref-item">rokkiDD</p>
+									<p class="room__body-ref-item">rokkiG</p>
+									<p class="room__body-ref-item">rokvvvvki</p>
+									<p class="room__body-ref-item">rokSSki</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		@@include('./parts/_footer.html')
+
+	</div>
+
+	@@include('./parts/_scripts.html')
+
+</body>
+
+</html>

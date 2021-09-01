@@ -280,7 +280,7 @@ body {
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   background-color: #eaeaea;
 }
@@ -353,6 +353,7 @@ body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
+  color: #fff;
   font-size: 16px;
   border-radius: 5px;
   background-color: #5e5e5e;
@@ -365,6 +366,7 @@ body {
 }
 
 .button:active {
+  color: #000;
   background-color: #fff;
 }
 
@@ -397,7 +399,6 @@ body {
 .auth__label {
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   font-weight: 600;
 }
 
@@ -428,6 +429,37 @@ body {
 .auth__input:focus,
 .lost__input:focus {
   border: 3px solid #1ed2f4;
+}
+
+.background-icon {
+  width: 37px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-icon.wm {
+  background-position: 97% 0;
+}
+
+.background-icon.aa {
+  background-position: 41% 0;
+}
+
+.background-icon.pe {
+  background-position: 22% 0;
+}
+
+.background-icon.btc {
+  background-position: 78% 0;
+}
+
+.background-icon.pm {
+  background-position: 3% 0;
+}
+
+.background-icon.tt {
+  background-position: 60% 0;
 }
 
 .header-main__row:last-child,
@@ -469,7 +501,6 @@ body {
 
 .header-main__auth-link {
   position: relative;
-  font-size: 16px;
   color: #000;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -574,7 +605,6 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
   color: #000;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -750,7 +780,6 @@ body {
 
 .statistic__title {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -800,7 +829,6 @@ body {
 
 .deposit-grid__item,
 .withdrawal-grid__item {
-  font-size: 16px;
   font-weight: 500;
 }
 
@@ -833,35 +861,6 @@ body {
           transform: rotate(180deg);
 }
 
-.withdrawal-grid__item--background {
-  width: 37px;
-  height: 35px;
-}
-
-.withdrawal-grid__item--background.wm {
-  background-position: 97% 0;
-}
-
-.withdrawal-grid__item--background.aa {
-  background-position: 41% 0;
-}
-
-.withdrawal-grid__item--background.pe {
-  background-position: 22% 0;
-}
-
-.withdrawal-grid__item--background.btc {
-  background-position: 78% 0;
-}
-
-.withdrawal-grid__item--background.pm {
-  background-position: 3% 0;
-}
-
-.withdrawal-grid__item--background.tt {
-  background-position: 60% 0;
-}
-
 #about__more {
   display: none;
 }
@@ -871,7 +870,6 @@ body {
 }
 
 .about__text {
-  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
@@ -920,7 +918,6 @@ body {
 
 .footer-main__copy {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
   text-align: center;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -1217,7 +1214,6 @@ body {
 
 .reviews__date {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
 }
 
 .contacts__list {
@@ -1230,7 +1226,6 @@ body {
 
 .contacts__link {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   letter-spacing: 0.5px;
   color: #000;
   -webkit-transition: all 0.5s;
@@ -1400,25 +1395,18 @@ body {
   height: 35px;
 }
 
-.room__balance-text {
-  font-size: 16px;
-}
-
 .room__balance-text span {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
 .room__balance-icon {
-  width: 37px;
-  height: 35px;
   margin-left: 10px;
 }
 
 .room__balance-link {
   position: relative;
   width: 100%;
-  font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000;
@@ -1445,7 +1433,6 @@ body {
 }
 
 .room__body-label {
-  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -1463,6 +1450,67 @@ body {
 
 .room__body-btn {
   background-color: green;
+}
+
+.room__body-inner--rows-three {
+  grid-template-rows: 60px auto 1fr;
+}
+
+.room__body-ref-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.room__body-ref-text p {
+  font-weight: 600;
+}
+
+.room__body-ref-text span {
+  font-weight: 400;
+  margin-right: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.room__body-ref-text .button {
+  width: 260px;
+  padding: 10px 5px;
+}
+
+.room__body-ref-text .button:focus {
+  background-color: green;
+}
+
+.room__body-ref-list {
+  min-height: 427px;
+}
+
+.room__body-ref-list,
+.room__body-ref-link {
+  padding: 20px 10px;
+}
+
+.room__body-ref-item {
+  border-bottom: 4px dotted #00ff08;
+  padding-bottom: 3px;
+}
+
+.room__body-ref-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.room__body-ref-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @-webkit-keyframes logo_img {
@@ -1526,6 +1574,14 @@ body {
             transform: scale(1);
   }
 
+  .header-main__auth-link--center:first-child:hover {
+    color: #15d415;
+  }
+
+  .header-main__auth-link--center:first-child:hover::before {
+    border-color: #15d415;
+  }
+
   .header-main__auth-link--center:last-child:hover {
     color: #c70e0e;
   }
@@ -1557,5 +1613,13 @@ body {
 
   .room__body-inner .select__option:hover {
     background-color: #1ed2f4;
+  }
+
+  .room__body-ref-text span:hover {
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.51);
+  }
+
+  .room__body-ref-text .button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

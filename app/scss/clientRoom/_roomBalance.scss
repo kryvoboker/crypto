@@ -38,22 +38,20 @@
 			height: 35px;
 		}
 	}
-	&__balance-text {
-		font-size: 16px;
-	}
+	// &__balance-text {
+	// 	font-size: 16px;
+	// }
 	&__balance-text span {
 		font-family: $Open_Sans;
 		font-weight: 700;
 	}
 	&__balance-icon {
-		width: 37px;
-		height: 35px;
 		margin-left: 10px;
 	}
 	&__balance-link {
 		position: relative;
 		width: 100%;
-		font-size: 16px;
+		// font-size: 16px;
 		font-weight: 500;
 		text-transform: uppercase;
 		color: #000;

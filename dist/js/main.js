@@ -7,17 +7,11 @@ $(function () {
 		}
 	});
 
-	//after login
-	$('.header-main__auth [href]').each(function () {
-		if (this.href == window.location.href) {
-			$(this).addClass('active');
-		}
-	});
-
 	//client room page //active menu
 	$('.room__balance-inner [href]').each(function () {
 		if (this.href == window.location.href) {
 			$(this).closest('.room__balance-item').addClass('active');
+			$('.header-main__auth-link--center:first-child').addClass('active');
 		}
 	});
 });;
@@ -443,3 +437,19 @@ for (let i = 0; i < date.length; i++) {
 		+ newDate.getFullYear();
 };
 // =====================================reviews-page==========================
+// =====================================client-room(referrals)-page===========
+function CopyToClipboard(containerid) {
+	if (document.selection) {
+		var range = document.body.createTextRange();
+		range.moveToElementText(document.getElementById(containerid));
+		range.select().createTextRange();
+		document.execCommand("Copy");
+
+	} else if (window.getSelection) {
+		var range = document.createRange();
+		range.selectNode(document.getElementById(containerid));
+		window.getSelection().addRange(range);
+		document.execCommand("Copy");
+	}
+};
+// =====================================client-room(referrals)-page===========

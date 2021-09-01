@@ -1,0 +1,44 @@
+.room__body-inner--rows-three {
+	grid-template-rows: 60px auto 1fr;
+}
+.room__body-ref {
+	&-text {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		transition: all .5s;
+
+		& p{
+			font-weight: 600;
+		}
+		& span {
+			font-weight: 400;
+			margin-right: 10px;
+			transition: all .5s;
+		}
+		& .button {
+			width: 260px;
+			padding: 10px 5px;
+		}
+		& .button:focus {
+			background-color: green;
+		}
+	}
+	&-list {
+		min-height: 427px;
+	}
+	&-list,
+	&-link {
+		padding: 20px 10px;
+	}
+	&-item {
+		border-bottom: 4px dotted #00ff08;
+		padding-bottom: 3px;
+	}
+	&-item:not(:first-child) {
+		margin-top: 10px;
+	}
+	&-item:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}

@@ -5,7 +5,7 @@ body {
 body {
 	font-family: $Montserrat;
 	color: #000;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	background-color: #eaeaea;
 }
@@ -64,6 +64,7 @@ body {
 	width: 100%;
 	font-family: $Open_Sans;
 	text-transform: uppercase;
+	color: #fff;
 	font-size: 16px;
 	border-radius: 5px;
 	background-color: #5e5e5e;
@@ -72,6 +73,7 @@ body {
 	transition: all .5s;
 
 	&:active {
+		color: #000;
 		background-color: #fff;
 	}
 }
@@ -100,7 +102,6 @@ body {
 .auth__label {
 	display: inline-block;
 	font-family: $Roboto;
-	font-size: 16px;
 	font-weight: 600;
 }
 .form__input,
@@ -122,6 +123,31 @@ body {
 	}
 	&:focus {
 		border: 3px solid #1ed2f4;
+	}
+}
+.background-icon {
+	width: 37px;
+	height: 35px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&.wm {
+		background-position: 97% 0;
+	}
+	&.aa {
+		background-position: 41% 0;
+	}
+	&.pe {
+		background-position: 22% 0;
+	}
+	&.btc {
+		background-position: 78% 0;
+	}
+	&.pm {
+		background-position: 3% 0;
+	}
+	&.tt {
+		background-position: 60% 0;
 	}
 }
 

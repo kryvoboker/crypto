@@ -18,6 +18,13 @@
 			transform: scale(1);
 		}
 	}
+	.header-main__auth-link--center:first-child:hover {
+		color: rgb(21, 212, 21);
+
+		&::before {
+			border-color: rgb(21, 212, 21);
+		}
+	}
 	.header-main__auth-link--center:last-child:hover {
 		color: rgb(199, 14, 14);
 
@@ -41,7 +48,16 @@
 	.room__body-inner .select__option:hover {
 		background-color: $blue;
 	}
+	.room__body-ref-text span:hover {
+		text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.51);
+	}
+	.room__body-ref-text .button:hover {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
 }
+
+
+
 @keyframes logo_img {
 	from {
 		transform: rotateY(0deg);
