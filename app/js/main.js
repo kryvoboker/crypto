@@ -18,6 +18,11 @@
 // =====================================reviews-page==========================
 @@include('./reviewsPage/reviews.js');
 // =====================================reviews-page==========================
+
 // =====================================client-room(referrals)-page===========
 @@include('./copyLinkReferral/copyLinkReferral.js');
 // =====================================client-room(referrals)-page===========
+
+// =====================================client-room(addRewiev)-page===========
+@@include('./addRewiev/addRewiev.js');
+// =====================================client-room(addRewiev)-page===========

@@ -1,0 +1,36 @@
+.support {
+	&-form__inner,
+	&-history__inner {
+		padding: 20px 10px;
+	}
+	&-form__input {
+		min-height: 200px;
+		resize: none;
+		margin-bottom: 20px;
+	}
+	&-history__item {
+		position: relative;
+		width: 100%;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+
+		&::before {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			right: 0;
+			left: 0;
+			width: 80%;
+			height: 3px;
+			border-radius: 50%;
+			border: 1px solid rgba(27, 0, 255, 0.56);
+			background-color: rgba(27, 0, 255, 0.56);
+			margin: 0 auto;
+		}
+	}
+	&-history__date {
+		display: inline-block;
+		font-weight: 500;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Оставить отзыв</title>
+	@@include('./parts/_headLinks.html')
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		@@include('./parts/clientRoom/_header.html')
+
+		<main class="main">
+			<div class="container">
+				<div class="room__inner">
+					<section class="room__balance border-style">
+						@@include('./parts/clientRoom/_roomBalance.html')
+					</section>
+					<section class="room__body">
+						<div class="room__body-inner room__body-inner--rows-two">
+							<h1 class="room__body-title title">Оставить отзыв</h1>
+							<div class="room__body-item">
+								<form class="add-rewiev-form__inner border-style" action="#">
+									<div class="add-rewiev-form__item">
+										<textarea class="add-rewiev-form__input" placeholder="Введите текст"></textarea>
+										<label class="add-rewiev-form__input add-rewiev-form__input--label">
+											<input class="add-rewiev-form__input add-rewiev-form__input--file"
+												type="file" accept="image/png, image/jpeg" id="formImage">
+											Выбрать изображение
+										</label>
+										<div class="add-rewiev-form__preview" id="formPreview"></div>
+									</div>
+									<button class="add-rewiev-form__btn button">Оставить отзыв</button>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		@@include('./parts/_footer.html')
+
+	</div>
+
+	@@include('./parts/_scripts.html')
+
+</body>
+
+</html>

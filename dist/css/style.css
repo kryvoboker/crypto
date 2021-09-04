@@ -404,7 +404,9 @@ body {
 
 .form__input,
 .auth__input,
-.lost__input {
+.lost__input,
+.support-form__input,
+.add-rewiev-form__input {
   width: 100%;
   height: 50px;
   border: 1px solid #000;
@@ -421,13 +423,17 @@ body {
 
 .form__input:not(:last-child),
 .auth__input:not(:last-child),
-.lost__input:not(:last-child) {
-  margin-bottom: 10px;
+.lost__input:not(:last-child),
+.support-form__input:not(:last-child),
+.add-rewiev-form__input:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .form__input:focus,
 .auth__input:focus,
-.lost__input:focus {
+.lost__input:focus,
+.support-form__input:focus,
+.add-rewiev-form__input:focus {
   border: 3px solid #1ed2f4;
 }
 
@@ -460,6 +466,23 @@ body {
 
 .background-icon.tt {
   background-position: 60% 0;
+}
+
+.reviews-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.reviews-title span {
+  font-weight: 600;
+}
+
+.reviews-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 .header-main__row:last-child,
@@ -1186,26 +1209,9 @@ body {
   padding: 20px;
 }
 
-.reviews__item-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
-.reviews__item-title span {
-  font-weight: 600;
-}
-
 .reviews__box {
   width: 100%;
   margin-bottom: 20px;
-}
-
-.reviews__text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-style: italic;
-  margin-bottom: 5px;
 }
 
 .reviews__img {
@@ -1513,6 +1519,82 @@ body {
   margin-bottom: 10px;
 }
 
+.support-form__inner,
+.support-history__inner {
+  padding: 20px 10px;
+}
+
+.support-form__input {
+  min-height: 200px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.support-history__item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.support-history__item::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  height: 3px;
+  border-radius: 50%;
+  border: 1px solid rgba(27, 0, 255, 0.56);
+  background-color: rgba(27, 0, 255, 0.56);
+  margin: 0 auto;
+}
+
+.support-history__date {
+  display: inline-block;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.room__body-inner--rows-two {
+  grid-template-rows: 60px 1fr;
+}
+
+.add-rewiev-form__inner {
+  padding: 20px 10px;
+}
+
+.add-rewiev-form__input {
+  min-height: 200px;
+  resize: none;
+}
+
+.add-rewiev-form__input--file {
+  display: none;
+}
+
+.add-rewiev-form__input--label {
+  display: inline-block;
+  height: 100%;
+  min-height: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.add-rewiev-form__preview {
+  width: 100px;
+  min-height: 1px;
+  margin-bottom: 20px;
+}
+
+.add-rewiev-form__preview img {
+  width: 100%;
+  height: auto;
+}
+
 @-webkit-keyframes logo_img {
   from {
     -webkit-transform: rotateY(0deg);
@@ -1621,5 +1703,10 @@ body {
 
   .room__body-ref-text .button:hover {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .add-rewiev-form__input--label:hover {
+    color: #fff;
+    background-color: #1ed2f4;
   }
 }

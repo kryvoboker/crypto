@@ -429,7 +429,7 @@ var newDate = new Date();
 var month = new Array("января", "февраля", "марта", "апреля", "мая", "июня",
 	"июля", "августа", "сентября", "октября", "ноября", "декабря");
 
-const date = document.querySelectorAll('.reviews__date');
+const date = document.querySelectorAll('.reviews__date, .support-history__date');
 for (let i = 0; i < date.length; i++) {
 	const el = date[i];
 	el.innerHTML = newDate.getDate() + ' - '
@@ -437,6 +437,7 @@ for (let i = 0; i < date.length; i++) {
 		+ newDate.getFullYear();
 };
 // =====================================reviews-page==========================
+
 // =====================================client-room(referrals)-page===========
 function CopyToClipboard(containerid) {
 	if (document.selection) {
@@ -453,3 +454,33 @@ function CopyToClipboard(containerid) {
 	}
 };
 // =====================================client-room(referrals)-page===========
+
+// =====================================client-room(addRewiev)-page===========
+const formImage = document.getElementById('formImage');
+const formPreview = document.getElementById('formPreview');
+
+//проверка изминения input
+formImage.addEventListener('change', () => {
+	uploadFile(formImage.files[0]);
+});
+
+//валидация изображения
+function uploadFile(file) {
+	if (!['image/jpeg', 'image/png'].includes(file.type)) {
+		alert('Разрешено добавлять только изображения!');
+		formImage.value = '';
+		return;
+	}
+
+	//вставляем изображения которое было выбрано в formImage
+	var reader = new FileReader();
+	reader.onload = function (e) {
+		let img = e.target.result;
+		formPreview.innerHTML = '<img src="' + img + '" alt="photo">';
+	};
+	reader.onerror = function (e) {
+		alert('Допущена ошибка');
+	};
+	reader.readAsDataURL(file);
+};
+// =====================================client-room(addRewiev)-page===========
