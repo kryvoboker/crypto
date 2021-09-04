@@ -406,7 +406,8 @@ body {
 .auth__input,
 .lost__input,
 .support-form__input,
-.add-rewiev-form__input {
+.add-rewiev-form__input,
+.room__body-item-input {
   width: 100%;
   height: 50px;
   border: 1px solid #000;
@@ -425,7 +426,8 @@ body {
 .auth__input:not(:last-child),
 .lost__input:not(:last-child),
 .support-form__input:not(:last-child),
-.add-rewiev-form__input:not(:last-child) {
+.add-rewiev-form__input:not(:last-child),
+.room__body-item-input:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -433,8 +435,19 @@ body {
 .auth__input:focus,
 .lost__input:focus,
 .support-form__input:focus,
-.add-rewiev-form__input:focus {
+.add-rewiev-form__input:focus,
+.room__body-item-input:focus {
   border: 3px solid #1ed2f4;
+}
+
+.add-rewiev-form__inner,
+.room__body-ref-list,
+.room__body-ref-link,
+.room__body-form,
+.room__body-item--padding,
+.support-form__inner,
+.support-history__inner {
+  padding: 20px 10px;
 }
 
 .background-icon {
@@ -1434,10 +1447,6 @@ body {
   margin: 0;
 }
 
-.room__body-form {
-  padding: 20px 10px;
-}
-
 .room__body-label {
   margin-bottom: 20px;
 }
@@ -1501,11 +1510,6 @@ body {
   min-height: 427px;
 }
 
-.room__body-ref-list,
-.room__body-ref-link {
-  padding: 20px 10px;
-}
-
 .room__body-ref-item {
   border-bottom: 4px dotted #00ff08;
   padding-bottom: 3px;
@@ -1559,10 +1563,6 @@ body {
 
 .room__body-inner--rows-two {
   grid-template-rows: 60px 1fr;
-}
-
-.add-rewiev-form__inner {
-  padding: 20px 10px;
 }
 
 .add-rewiev-form__input {

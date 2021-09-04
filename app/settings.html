@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Настройки профиля</title>
+	@@include('./parts/_headLinks.html')
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		@@include('./parts/clientRoom/_header.html')
+
+		<main class="main">
+			<div class="container">
+				<div class="room__inner">
+					<section class="room__balance border-style">
+						@@include('./parts/clientRoom/_roomBalance.html')
+					</section>
+					<section class="room__body">
+						<div class="room__body-inner room__body-inner--rows-two">
+							<h1 class="room__body-title title">Настройки профиля</h1>
+							<div class="room__body-item border-style room__body-item--padding">
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										ID
+									</div>
+									<div class="room__body-item-text">
+										0002
+									</div>
+								</div>
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										ID пригласителя
+									</div>
+									<div class="room__body-item-text">
+										0001
+									</div>
+								</div>
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										Логин
+									</div>
+									<div class="room__body-item-text">
+										micron55
+									</div>
+								</div>
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										Почта
+									</div>
+									<div class="room__body-item-text">
+										someMail@gmail.com
+									</div>
+								</div>
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										Пополнено
+									</div>
+									<div class="room__body-item-text">
+										0.00
+									</div>
+								</div>
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										Выведено
+									</div>
+									<div class="room__body-item-text">
+										0.00
+									</div>
+								</div>
+								<div class="room__body-item-box">
+									<div class="room__body-item-title">
+										Реферальная ссылка
+									</div>
+									<div class="room__body-item-text">
+										http://r-krivobok-dev.com/crypto/index.html
+									</div>
+								</div>
+								<form class="room__body-item-box" action="#">
+									<div class="room__body-item-title">
+										Perfect Money
+									</div>
+									<div class="room__body-item-text room__body-item-text--inputs">
+										<input class="room__body-item-input" type="text"
+											placeholder="Введите Ваш кошелёк">
+										<button class="room__body-item-btn button" type="submit">Сохранить</button>
+									</div>
+								</form>
+								<form class="room__body-item-box" action="#">
+									<div class="room__body-item-title">
+										Payeer
+									</div>
+									<div class="room__body-item-text room__body-item-text--inputs">
+										<input class="room__body-item-input" type="text"
+											placeholder="Введите Ваш кошелёк">
+										<button class="room__body-item-btn button" type="submit">Сохранить</button>
+									</div>
+								</form>
+								<form class="room__body-item-box" action="#">
+									<div class="room__body-item-title">
+										Web Money
+									</div>
+									<div class="room__body-item-text room__body-item-text--inputs">
+										<input class="room__body-item-input" type="text"
+											placeholder="Введите Ваш кошелёк">
+										<button class="room__body-item-btn button" type="submit">Сохранить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		@@include('./parts/_footer.html')
+
+	</div>
+
+	@@include('./parts/_scripts.html')
+
+</body>
+
+</html>

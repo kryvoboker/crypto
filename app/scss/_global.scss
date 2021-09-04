@@ -105,7 +105,8 @@ body {
 .auth__input,
 .lost__input,
 .support-form__input,
-.add-rewiev-form__input {
+.add-rewiev-form__input,
+.room__body-item-input {
 	width: 100%;
 	height: 50px;
 	border: 1px solid #000;
@@ -123,6 +124,15 @@ body {
 	&:focus {
 		border: 3px solid $blue;
 	}
+}
+.add-rewiev-form__inner,
+.room__body-ref-list,
+.room__body-ref-link,
+.room__body-form,
+.room__body-item--padding,
+.support-form__inner,
+.support-history__inner {
+	padding: 20px 10px;
 }
 .background-icon {
 	width: 37px;
