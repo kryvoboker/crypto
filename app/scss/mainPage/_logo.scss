@@ -9,6 +9,9 @@
 		width: 100%;
 		min-height: 500px;
 		height: 100%;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	&__content {
 		flex: 0 1 40%;
@@ -42,12 +45,18 @@
 		justify-content: center;
 		align-items: center;
 	}
+	&__image-box {
+		position: relative;
+		width: 200px;
+		height: 200px;
+		z-index: 55;
+		margin: -63px 0 0 -38px;
+	}
 	&__img {
 		position: relative;
 		width: 132px;
 		z-index: 55;
-		padding: 5px;
-		margin: -18% 15px 0 0;
+		margin: 6% 0px 0 35px;
 	}
 	&__img-bg {
 		position: absolute;

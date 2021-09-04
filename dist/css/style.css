@@ -684,6 +684,9 @@ body {
   width: 100%;
   min-height: 500px;
   height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo__content {
@@ -741,12 +744,19 @@ body {
           align-items: center;
 }
 
+.logo__image-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 55;
+  margin: -63px 0 0 -38px;
+}
+
 .logo__img {
   position: relative;
   width: 132px;
   z-index: 55;
-  padding: 5px;
-  margin: -18% 15px 0 0;
+  margin: 6% 0px 0 35px;
 }
 
 .logo__img-bg {
@@ -1745,7 +1755,7 @@ body {
             box-shadow: 0 0 4px 3px #000;
   }
 
-  .logo__img:hover {
+  .logo__image-box:hover .logo__img {
     -webkit-animation: logo_img linear 2s 0s infinite;
             animation: logo_img linear 2s 0s infinite;
   }

@@ -35,8 +35,10 @@
 	.header-main__lang-img:hover {
 		box-shadow: 0 0 4px 3px #000;
 	}
-	.logo__img:hover {
-		animation: logo_img linear 2s 0s infinite;
+	.logo__image-box:hover {
+		.logo__img {
+			animation: logo_img linear 2s 0s infinite;
+		}
 	}
 	.referrals__title:hover {
 		background-color: $lightBlack;
