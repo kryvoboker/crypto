@@ -18,7 +18,7 @@
 	}
 	.deposit-grid__item--fw--bold::before {
 		display: inline-block;
-		color: rgb(255, 5, 5);
+		color: $red;
 		transform: rotate(180deg);
 	}
 }

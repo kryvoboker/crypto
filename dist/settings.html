@@ -204,7 +204,7 @@
 										Пополнено
 									</div>
 									<div class="room__body-item-text">
-										0.00
+										0.00$
 									</div>
 								</div>
 								<div class="room__body-item-box">
@@ -212,7 +212,7 @@
 										Выведено
 									</div>
 									<div class="room__body-item-text">
-										0.00
+										0.00$
 									</div>
 								</div>
 								<div class="room__body-item-box">
@@ -253,6 +253,31 @@
 										<button class="room__body-item-btn button" type="submit">Сохранить</button>
 									</div>
 								</form>
+								<form class="room__body-item-box" action="#">
+									<div class="room__body-item-title">
+										Сменить пароль
+									</div>
+									<div class="room__body-item-text room__body-item-text--inputs">
+										<input class="room__body-item-input" type="password"
+											placeholder="Введите старый пароль" required>
+										<input class="room__body-item-input" id="newPsw" type="password"
+											pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+											placeholder="Введите новый пароль" required>
+										<input class="room__body-item-input" id="againNewPsw" type="password"
+											pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+											placeholder="Повторите новый пароль" onChange="checkPasswordMatch();"
+											required>
+										<button class="room__body-item-btn button" type="submit">Сохранить</button>
+									</div>
+								</form>
+								<div id="message">
+									<h3>Password must contain the following:</h3>
+									<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+									<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+									<p id="number" class="invalid">A <b>number</b></p>
+									<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+									<p id="ravno" class="invalid">Must be <b>bla bla bla</b></p>
+								</div>
 							</div>
 						</div>
 					</section>
@@ -263,54 +288,10 @@
 		<footer class="footer">
 	<div class="container">
 		<div class="footer-main__inner">
-			<!-- <div class="footer-main__row">
-				<nav class="footer-menu-main">
-					<ul class="footer-menu-main__list">
-						<li class="footer-menu-main__item">
-							<a class="footer-menu-main__link" href="index.html">
-								Главная
-							</a>
-						</li>
-						<li class="footer-menu-main__item">
-							<a class="footer-menu-main__link" href="faq.html">
-								F.A.Q.
-							</a>
-						</li>
-						<li class="footer-menu-main__item">
-							<a class="footer-menu-main__link" href="#">
-								Новости
-							</a>
-						</li>
-						<li class="footer-menu-main__item">
-							<a class="footer-menu-main__link" href="investPlans.html">
-								Тарифы
-							</a>
-						</li>
-						<li class="footer-menu-main__item">
-							<a class="footer-menu-main__link" href="reviews.html">
-								Отзывы
-							</a>
-						</li>
-						<li class="footer-menu-main__item">
-							<a class="footer-menu-main__link" href="contacts.html">
-								Контакты
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div> -->
 			<div class="footer-main__row">
 				<div class="footer-main__telegramm">
 					<a class="footer-main__telegramm-link" href="#"></a>
 				</div>
-				<!-- <div class="footer-main__auth">
-					<a class="footer-main__auth-link" href="auth.html">
-						Вход
-					</a>
-					<a class="footer-main__auth-link" href="auth.html">
-						Регистрация
-					</a>
-				</div> -->
 				<div class="footer-main__lang">
 					<button class="footer-main__lang-btn" type="button">
 						<img class="footer-main__lang-img" src="img/flags/rus.png" alt="">

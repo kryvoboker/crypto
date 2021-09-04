@@ -2,8 +2,8 @@
 @import 'fonts';
 @import 'mixins';
 @import "nullStyle";
-@import "select";
 @import 'libs';
+@import "select";
 @import 'global';
 
 // =====================================main-page=============================
@@ -51,6 +51,7 @@
 @import 'clientRoom/support';
 @import 'clientRoom/addRewiev';
 @import 'clientRoom/settings';
+@import 'clientRoom/validatePassword';
 // =====================================clientRoom-page=======================
 
 @import "mediaAnyHover";

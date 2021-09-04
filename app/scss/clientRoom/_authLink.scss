@@ -8,10 +8,10 @@
 		right: -9%;
 	}
 	&:first-child.active {
-		color: rgb(21, 212, 21);
+		color: $green;
 	}
 	&:first-child.active::before {
-		border-color: rgb(21, 212, 21);
+		border-color: $green;
 	}
 	
 }

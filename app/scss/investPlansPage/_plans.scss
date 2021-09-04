@@ -8,9 +8,7 @@
 		margin-bottom: 50px;
 	}
 	&__row {
-		// border: 2px solid #000;
 		border-radius: 20px;
-		// background-color: #fff;
 		transition: background-color .5s;
 		padding: 30px;
 		margin: 0 10px;
@@ -21,7 +19,7 @@
 	}
 	@media (any-hover:hover) {
 		.plans__row:hover {
-			background-color: rgba(63,61,61,0.274);
+			background-color: $lightBlack;
 
 			.button {
 				box-shadow: 5px 5px 10px #fff;
@@ -75,13 +73,4 @@
 		font-size: 20px;
 		color: #fff;
 	}
-	// &__link {
-	// 	font-family: $Open_Sans;
-	// 	font-size: 20px;
-	// 	text-transform: uppercase;
-	// 	color: #fff;
-	// 	background-color: rgb(94, 89, 143);
-	// 	border-radius: 10px;
-	// 	padding: 10px 20px;
-	// }
 }

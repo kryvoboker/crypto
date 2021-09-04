@@ -26,3 +26,7 @@
 // =====================================client-room(addRewiev)-page===========
 @@include('./addRewiev/addRewiev.js');
 // =====================================client-room(addRewiev)-page===========
+
+// =====================================client-room(validatePassword)-page====
+@@include('./validatePassword/validatePassword.js');
+// =====================================client-room(validatePassword)-page====

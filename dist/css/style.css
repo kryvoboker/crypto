@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?d0sm4f");
@@ -272,11 +274,6 @@ element {
   display: block;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
@@ -355,6 +352,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-size: 16px;
+  border: 1px solid transparent;
   border-radius: 5px;
   background-color: #5e5e5e;
   -webkit-box-shadow: 5px 5px 10px black;
@@ -437,7 +435,7 @@ body {
 .support-form__input:focus,
 .add-rewiev-form__input:focus,
 .room__body-item-input:focus {
-  border: 3px solid #1ed2f4;
+  border: 1px solid #1ed2f4;
 }
 
 .add-rewiev-form__inner,
@@ -492,7 +490,6 @@ body {
 }
 
 .reviews-text {
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: italic;
   margin-bottom: 5px;
@@ -891,7 +888,7 @@ body {
 
 .withdrawal .deposit-grid__item--fw--bold::before {
   display: inline-block;
-  color: #ff0505;
+  color: #ff0000;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1162,10 +1159,6 @@ body {
   padding: 20px 30px;
 }
 
-.referrals__title:hover {
-  background-color: rgba(63, 61, 61, 0.274);
-}
-
 .referrals__title.active {
   background-color: rgba(63, 61, 61, 0.274);
 }
@@ -1343,11 +1336,11 @@ body {
 }
 
 .header-main__auth-link--center:first-child.active {
-  color: #15d415;
+  color: #00ff08;
 }
 
 .header-main__auth-link--center:first-child.active::before {
-  border-color: #15d415;
+  border-color: #00ff08;
 }
 
 .room__inner {
@@ -1364,7 +1357,7 @@ body {
 }
 
 .room__balance-title {
-  border-bottom: 3px solid #f00;
+  border-bottom: 3px solid #ff0000;
 }
 
 .room__balance-item {
@@ -1374,7 +1367,7 @@ body {
 }
 
 .room__balance-item:first-child {
-  border-bottom: 3px solid #f00;
+  border-bottom: 3px solid #ff0000;
   margin-bottom: 20px;
 }
 
@@ -1464,7 +1457,7 @@ body {
 }
 
 .room__body-btn {
-  background-color: green;
+  background-color: #00ff08;
 }
 
 .room__body-inner--rows-three {
@@ -1503,7 +1496,7 @@ body {
 }
 
 .room__body-ref-text .button:focus {
-  background-color: green;
+  background-color: #00ff08;
 }
 
 .room__body-ref-list {
@@ -1521,11 +1514,6 @@ body {
 
 .room__body-ref-item:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.support-form__inner,
-.support-history__inner {
-  padding: 20px 10px;
 }
 
 .support-form__input {
@@ -1595,6 +1583,85 @@ body {
   height: auto;
 }
 
+.room__body-item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #ff0000;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.room__body-item-title {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.room__body-item-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.room__body-item-btn:focus {
+  border: 1px solid #ff0000;
+}
+
+.room__body {
+  /* The message box is shown when the user clicks on the password field */
+  /* Add a green text color and a checkmark when the requirements are right */
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+}
+
+.room__body #message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.room__body #message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.room__body .valid {
+  color: #00ff08;
+}
+
+.room__body .valid:before {
+  position: relative;
+  left: -35px;
+  content: "✓";
+}
+
+.room__body .invalid {
+  color: #ff0000;
+}
+
+.room__body .invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✘";
+}
+
 @-webkit-keyframes logo_img {
   from {
     -webkit-transform: rotateY(0deg);
@@ -1657,19 +1724,19 @@ body {
   }
 
   .header-main__auth-link--center:first-child:hover {
-    color: #15d415;
+    color: #00ff08;
   }
 
   .header-main__auth-link--center:first-child:hover::before {
-    border-color: #15d415;
+    border-color: #00ff08;
   }
 
   .header-main__auth-link--center:last-child:hover {
-    color: #c70e0e;
+    color: #ff0000;
   }
 
   .header-main__auth-link--center:last-child:hover::before {
-    border-color: #c70e0e;
+    border-color: #ff0000;
   }
 
   .header-main__lang-img:hover,
@@ -1681,6 +1748,10 @@ body {
   .logo__img:hover {
     -webkit-animation: logo_img linear 2s 0s infinite;
             animation: logo_img linear 2s 0s infinite;
+  }
+
+  .referrals__title:hover {
+    background-color: rgba(63, 61, 61, 0.274);
   }
 
   .footer-main__lang-img:hover {
@@ -1701,7 +1772,8 @@ body {
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.51);
   }
 
-  .room__body-ref-text .button:hover {
+  .room__body-ref-text .button:hover,
+  .room__body-item-btn:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
 

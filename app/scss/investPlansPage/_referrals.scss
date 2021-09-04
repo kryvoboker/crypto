@@ -17,11 +17,8 @@
 		transition: background-color .5s;
 		padding: 20px 30px;
 
-		&:hover {
-			background-color: rgba(63,61,61,0.274);
-		}
 		&.active {
-			background-color: rgba(63,61,61,0.274);
+			background-color: $lightBlack;
 		}
 	}
 	&__text {
