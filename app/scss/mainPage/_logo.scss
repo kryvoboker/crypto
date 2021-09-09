@@ -1,5 +1,7 @@
 // =====================================logo=================================
 .logo {
+	overflow: hidden;
+
 	& .container {
 		padding: 0;
 	}
@@ -14,12 +16,12 @@
 		background-repeat: no-repeat;
 	}
 	&__content {
-		flex: 0 1 40%;
+		flex: 0 1 470px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 0 10px;
+		padding: 30px 10px;
 	}
 	&__title {
 		font-family: $Lato;
@@ -40,7 +42,7 @@
 	}
 	&__image {
 		position: relative;
-		flex: 0 0 30%;
+		flex: 0 0 465px;
 		display: flex;
 		justify-content: center;
 		align-items: center;

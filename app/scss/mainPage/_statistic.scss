@@ -2,14 +2,16 @@
 .statistic {
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 		padding: 20px 100px;
 	}
 	&__item {
-		flex: 0 1 12%;
+		flex: 0 1 150px;
 		min-height: 100px;
 		text-align: center;
+		margin: 20px;
 	}
 	&__img {
 		width: 100%;

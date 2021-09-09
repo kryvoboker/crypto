@@ -375,6 +375,20 @@ if (questBtn) {
 };
 // =====================================faq-page==============================
 
+// =====================================auth-page=============================
+function authFunction() {
+	let login = document.getElementById('login').value;
+	let password = document.getElementById('password').value;
+
+	if (login == 'admin@gmail.com' && password == 'admin') {
+		window.location.href = 'http://localhost:3000/clientRoom.html';
+	}
+	else {
+		alert('Не правильно введен логин или пароль');
+	}
+};
+// =====================================auth-page=============================
+
 // =====================================investPlans-page======================
 // filterSelection("referrals__text--second")
 function filterSelection(c) {
@@ -623,3 +637,16 @@ $(document).ready(function () {
 	$("#againNewPsw").keyup(checkPasswordMatch);
 });;
 // =====================================client-room(validatePassword)-page====
+
+"use strict"
+
+// Меню бургер
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.header-main__inner');
+if (iconMenu) {
+	iconMenu.addEventListener("click", function (e) {
+		document.body.classList.toggle('lock');
+		iconMenu.classList.toggle('active');
+		menuBody.classList.toggle('active');
+	});
+};

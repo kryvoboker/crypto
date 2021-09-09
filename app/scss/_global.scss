@@ -4,6 +4,10 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	background-color: #eaeaea;
+
+	&.lock {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
@@ -14,6 +18,7 @@ body {
 
 .header {
 	width: 100%;
+	min-height: 76px;
 }
 .main {
 	flex: 1 0 auto;

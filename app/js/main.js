@@ -11,6 +11,10 @@
 @@include('./faqPage/faq.js');
 // =====================================faq-page==============================
 
+// =====================================auth-page=============================
+@@include('./authPage/auth.js');
+// =====================================auth-page=============================
+
 // =====================================investPlans-page======================
 @@include('./investPlansPage/referrals.js');
 // =====================================investPlans-page======================
@@ -28,5 +32,7 @@
 // =====================================client-room(addRewiev)-page===========
 
 // =====================================client-room(validatePassword)-page====
-@@include('./validatePassword/validatePassword.js');
+@@include('./validatePassword.js');
 // =====================================client-room(validatePassword)-page====
+
+@@include('./burgerMenu.js');
