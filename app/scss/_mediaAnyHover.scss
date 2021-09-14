@@ -1,6 +1,7 @@
 @media (any-hover:hover) {
 	.menu-main__link:hover {
-		color: $blue;
+		// color: $blue;
+		color: #fff;
 		
 		&::before {
 			transform: scale(1);
@@ -9,14 +10,19 @@
 	.header-main__telegramm-link:hover::before,
 	.contacts__link--viber:hover::before,
 	.contacts__link:hover {
-		color: $blue;
+		// color: $blue;
+		color: #fff;
 	}
 	.header-main__auth-link:hover {
-		color: $blue;
+		// color: $blue;
+		color: #fff;
 
 		&::before {
 			transform: scale(1);
 		}
+	}
+	.footer-main__telegramm-link:hover::before {
+		color: $blue;
 	}
 	.header-main__auth-link--center:first-child:hover {
 		color: $green;

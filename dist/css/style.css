@@ -553,7 +553,7 @@ body.lock {
   bottom: -5px;
   left: -2%;
   right: -2%;
-  border-bottom: 3px solid #1ed2f4;
+  border-bottom: 3px solid #fff;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -579,7 +579,7 @@ body.lock {
 }
 
 .header-main__auth-link.active {
-  color: #1ed2f4;
+  color: #fff;
 }
 
 .header-main__auth-link:first-child {
@@ -658,7 +658,7 @@ body.lock {
   bottom: 3px;
   left: 10%;
   right: 10%;
-  border-bottom: 3px solid #1ed2f4;
+  border-bottom: 3px solid #fff;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -674,7 +674,7 @@ body.lock {
 }
 
 .menu-main__link.active {
-  color: #1ed2f4;
+  color: #fff;
 }
 
 .logo {
@@ -2054,7 +2054,7 @@ body.lock {
   }
 
   .menu-main__link:hover {
-    color: #1ed2f4;
+    color: #fff;
   }
 
   .menu-main__link:hover::before {
@@ -2067,17 +2067,21 @@ body.lock {
   .footer-main__telegramm-link:hover::before,
   .contacts__link--viber:hover::before,
   .contacts__link:hover {
-    color: #1ed2f4;
+    color: #fff;
   }
 
   .header-main__auth-link:hover {
-    color: #1ed2f4;
+    color: #fff;
   }
 
   .header-main__auth-link:hover::before {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+  }
+
+  .footer-main__telegramm-link:hover::before {
+    color: #1ed2f4;
   }
 
   .header-main__auth-link--center:first-child:hover {

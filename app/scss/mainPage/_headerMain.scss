@@ -30,7 +30,8 @@
 				bottom: -5px;
 				left: -2%;
 				right: -2%;
-				border-bottom: 3px solid $blue;
+				// border-bottom: 3px solid $blue;
+				border-bottom: 3px solid #fff;
 				transform: scale(0);
 				transition: all .5s ease;
 			}
@@ -46,7 +47,8 @@
 				transform: scale(1);
 			}
 			&.active {
-				color: $blue;
+				// color: $blue;
+				color: #fff;
 			}
 		}
 		&-link:first-child {
@@ -101,7 +103,8 @@
 			bottom: 3px;
 			left: 10%;
 			right: 10%;
-			border-bottom: 3px solid $blue;
+			// border-bottom: 3px solid $blue;
+			border-bottom: 3px solid #fff;
 			transform: scale(0);
 			transition: all .5s ease;
 
@@ -110,7 +113,8 @@
 			transform: scale(1);
 		}
 		&.active {
-			color: $blue;
+			// color: $blue;
+			color: #fff;
 		}
 	}
 }
