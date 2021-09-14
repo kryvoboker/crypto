@@ -1,3 +1,15 @@
+@media ($maw: 1030px) {
+	.deposit-grid,
+	.withdrawal-grid {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.deposit-grid__row,
+	.withdrawal-grid__row {
+		flex-grow: 0;
+		margin-bottom: 20px;
+	}
+}
 @media ($maw: 1024px) {
 	.header-main__auth,
 	.header-main__telegramm-link {
@@ -55,8 +67,36 @@
 	.header-main__auth-link {
 		font-size: 20px;
 	}
+	.deposit-grid,
+	.withdrawal-grid {
+		padding: 10px;
+	}
+	.about__title,
+	.deposit__title,
+	.withdrawal__title {
+		@include adaptiv-font(30, 26);
+		margin-bottom: 30px;
+	}
+	.deposit-grid__item,
+	.withdrawal-grid__item,
+	.about__text,
+	.button,
+	.footer-main__copy {
+		@include adaptiv-font(16, 14);
+	}
+	.background-icon {
+		width: 30px;
+		height: 28px;
+	}
+	.deposit-grid__item--left {
+		margin-left: 10px;
+	}
+	.footer-main__copy,
+	.footer-main__inner {
+		padding: 10px;
+	}
 }
-@media ($maw: 600px) {
+@media($maw: 690px) {
 	.menu__icon {
 		z-index: 5;
 		display: block;
@@ -159,6 +199,11 @@
 	}
 	.header-main__auth-link:last-child {
 		border-color: #fff;
+	}
+}
+@media ($maw: 600px) {
+	.deposit-grid__item--left {
+		margin-left: 0px;
 	}
 }
 @media ($maw: 525px) {

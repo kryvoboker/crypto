@@ -12,7 +12,8 @@
 		padding: 20px;
 
 		&__row {
-			flex: 0 1 33.333%;
+			flex: 1 1 312px;
+			// max-width: 312px;
 			display: grid;
 			grid-template-columns: minmax(85px, 150px) minmax(70px, 100px) 1fr;
 			grid-template-rows: repeat(5, 1fr);
@@ -31,6 +32,7 @@
 		&__item--fw--bold {
 			font-weight: 700;
 			justify-self: stretch;
+			margin-left: 5px;
 
 			&::before {
 				font-family: 'icomoon';

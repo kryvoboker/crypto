@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?d0sm4f");
-  src: url("../fonts/icomoon.eot?d0sm4f#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?d0sm4f") format("truetype"), url("../fonts/icomoon.woff?d0sm4f") format("woff"), url("../fonts/icomoon.svg?d0sm4f#icomoon") format("svg");
+  src: url("../fonts/icons/telegram/icomoon.eot?d0sm4f");
+  src: url("../fonts/icons/telegram/icomoon.eot?d0sm4f#iefix") format("embedded-opentype"), url("../fonts/icons/telegram/icomoon.ttf?d0sm4f") format("truetype"), url("../fonts/icons/telegram/icomoon.woff?d0sm4f") format("woff"), url("../fonts/icons/telegram/icomoon.svg?d0sm4f#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,8 +30,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/caret_down/icomoon.eot?et9e6c");
-  src: url("../fonts/caret_down/icomoon.eot?et9e6c#iefix") format("embedded-opentype"), url("../fonts/caret_down/icomoon.ttf?et9e6c") format("truetype"), url("../fonts/caret_down/icomoon.woff?et9e6c") format("woff"), url("../fonts/caret_down/icomoon.svg?et9e6c#icomoon") format("svg");
+  src: url("../fonts/icons/icomoon.eot?et9e6c");
+  src: url("../fonts/icons/icomoon.eot?et9e6c#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?et9e6c") format("truetype"), url("../fonts/icons/icomoon.woff?et9e6c") format("woff"), url("../fonts/icons/icomoon.svg?et9e6c#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -279,7 +279,7 @@ body {
   color: #000;
   font-size: 16px;
   font-weight: 400;
-  background-color: #eaeaea;
+  background-color: #2fa1d2;
 }
 
 body.lock {
@@ -458,6 +458,7 @@ body.lock {
   height: 35px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 5px;
 }
 
 .background-icon.wm {
@@ -507,8 +508,7 @@ body.lock {
   display: flex;
 }
 
-.header-main__inner,
-.footer-main__inner {
+.header-main__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,9 +867,9 @@ body.lock {
 
 .deposit-grid__row,
 .withdrawal-grid__row {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.333%;
-          flex: 0 1 33.333%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 312px;
+          flex: 1 1 312px;
   display: grid;
   grid-template-columns: minmax(85px, 150px) minmax(70px, 100px) 1fr;
   grid-template-rows: repeat(5, 1fr);
@@ -896,6 +896,7 @@ body.lock {
 .deposit-grid__item--fw--bold {
   font-weight: 700;
   justify-self: stretch;
+  margin-left: 5px;
 }
 
 .deposit-grid__item--fw--bold::before {
@@ -953,12 +954,17 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0 !important;
 }
 
 .footer-main__telegramm {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.footer-main__telegramm-link {
+  margin-left: 0 !important;
 }
 
 .footer-main__telegramm-link::before {
@@ -970,7 +976,7 @@ body.lock {
 }
 
 .footer-main__lang {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .footer-main__copy {
@@ -1720,6 +1726,24 @@ body.lock {
   }
 }
 
+@media (max-width: 1030px) {
+  .deposit-grid,
+  .withdrawal-grid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .deposit-grid__row,
+  .withdrawal-grid__row {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1024px) {
   .header-main__auth,
   .header-main__telegramm-link,
@@ -1729,8 +1753,7 @@ body.lock {
 }
 
 @media (max-width: 1000px) {
-  .header-main__inner,
-  .footer-main__inner {
+  .header-main__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1795,9 +1818,43 @@ body.lock {
   .header-main__auth-link {
     font-size: 20px;
   }
+
+  .deposit-grid,
+  .withdrawal-grid {
+    padding: 10px;
+  }
+
+  .about__title,
+  .deposit__title,
+  .withdrawal__title {
+    font-size: calc(26px + 4 * ((100vw - 280px) / 1220));
+    margin-bottom: 30px;
+  }
+
+  .deposit-grid__item,
+  .withdrawal-grid__item,
+  .about__text,
+  .button,
+  .footer-main__copy {
+    font-size: calc(14px + 2 * ((100vw - 280px) / 1220));
+  }
+
+  .background-icon {
+    width: 30px;
+    height: 28px;
+  }
+
+  .deposit-grid__item--left {
+    margin-left: 10px;
+  }
+
+  .footer-main__copy,
+  .footer-main__inner {
+    padding: 10px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   .menu__icon {
     z-index: 5;
     display: block;
@@ -1863,8 +1920,7 @@ body.lock {
     background-color: #fff;
   }
 
-  .header-main__inner,
-  .footer-main__inner {
+  .header-main__inner {
     position: fixed;
     top: 0;
     left: -100%;
@@ -1890,8 +1946,7 @@ body.lock {
     overflow: auto;
   }
 
-  .header-main__inner.active,
-  .active.footer-main__inner {
+  .header-main__inner.active {
     left: 0;
   }
 
@@ -1958,6 +2013,12 @@ body.lock {
   }
 }
 
+@media (max-width: 600px) {
+  .deposit-grid__item--left {
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 525px) {
   .statistic__item {
     -ms-flex-preferred-size: 125px;
@@ -1970,8 +2031,7 @@ body.lock {
 }
 
 @media (max-width: 415px) {
-  .header-main__inner,
-  .footer-main__inner {
+  .header-main__inner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

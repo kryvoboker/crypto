@@ -8,6 +8,7 @@ let path = {
 		js: projectFolder + "/js/",
 		img: projectFolder + "/img/",
 		fonts: projectFolder + "/fonts/",
+		iconFonts: projectFolder + "/fonts/icons/",
 	},
 	app: {
 		html: [appFolder + "/*.html", "!" + appFolder + "/_*.html"],
@@ -15,6 +16,7 @@ let path = {
 		js: appFolder + "/js/main.js",
 		img: appFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: appFolder + "/fonts/*.ttf",
+		iconFonts: appFolder + "/fonts/icons/**/*.*",
 	},
 	watch: {
 		html: appFolder + "/**/*.html",
@@ -123,9 +125,11 @@ function fonts() {
 	src(path.app.fonts)
 		.pipe(ttf2woff())
 		.pipe(dest(path.build.fonts));
-	return src(path.app.fonts)
+	src(path.app.fonts)
 		.pipe(ttf2woff2())
 		.pipe(dest(path.build.fonts));
+	return src(path.app.iconFonts)
+		.pipe(dest(path.build.iconFonts));
 }
 
 gulp.task('otfInTtf', function () {

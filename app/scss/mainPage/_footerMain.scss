@@ -7,14 +7,14 @@
 	}
 	&-main {
 		&__inner {
-			@extend .header-main__inner;
 			justify-content: center;
 			padding: 20px;
 		}
 		&__row {
+			@extend .header-main__row;
 			flex-direction: column;
 			align-items: center;
-			@extend .header-main__row;
+			margin-bottom: 0 !important;
 		}
 		&__telegramm {
 			width: 100%;
@@ -26,12 +26,13 @@
 				color: #fff;
 			}
 			@extend .header-main__telegramm-link;
+			margin-left: 0 !important;
 		}
 		&__auth {
 			display: none;
 		}
 		&__lang {
-			margin: 0;
+			margin: 0 !important;
 			@extend .header-main__lang;
 		}
 		&__lang-btn {
