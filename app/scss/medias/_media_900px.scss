@@ -1,0 +1,19 @@
+@media($maw: 900px) {
+	.title {
+		@include adaptiv-font(50, 34);
+		margin: 0 0 30px 0;
+	}
+	.question__item-title,
+	.question__text {
+		@include adaptiv-font(30, 20);
+		letter-spacing: .5px;
+		line-height: 24px;
+	}
+	.question__row {
+		padding: 10px;
+		margin: 0;
+	}
+	.question__row:last-child {
+		margin-left: 10px;
+	}
+}

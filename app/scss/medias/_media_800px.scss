@@ -1,0 +1,11 @@
+@media ($maw: 800px) {
+	.statistic__img {
+		width: 100px;
+	}
+	.statistic__title {
+		@include adaptiv-font(16, 13);
+	}
+	.statistic__counts {
+		@include adaptiv-font(22, 18);
+	}
+}

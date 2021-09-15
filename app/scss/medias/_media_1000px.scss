@@ -1,0 +1,23 @@
+@media ($maw: 1000px) {
+	.logo__inner {
+		justify-content: center;
+	}
+	.logo__image {
+		display: none;
+	}
+	.statistic__inner {
+		justify-content: space-around;
+	}
+	.plans__inner {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		row-gap: 20px;
+	}
+	.plans__row:nth-child(2) .plans__item {
+		margin: 0;
+	}
+	.plans__row:last-child {
+		grid-column: 1 / 3;
+		justify-self: center;
+	}
+}

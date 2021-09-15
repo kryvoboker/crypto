@@ -1,0 +1,76 @@
+@media ($maw: 768px) {
+	.logo,
+	.question,
+	.plans,
+	.reviews,
+	.contacts,
+	.form,
+	.auth,
+	.lost,
+	.room__inner {
+		margin-bottom: 25px;
+	}
+	.statistic,
+	.deposit,
+	.withdrawal,
+	.about {
+		margin: 25px 0;
+	}
+	.logo__title {
+		@include adaptiv-font(50, 40);
+	}
+	.menu-main__link,
+	.header-main__auth-link {
+		font-size: 20px;
+	}
+	.deposit-grid,
+	.withdrawal-grid {
+		padding: 10px;
+	}
+	.about__title,
+	.deposit__title,
+	.withdrawal__title {
+		@include adaptiv-font(30, 26);
+		margin-bottom: 30px;
+	}
+	.deposit-grid__item,
+	.withdrawal-grid__item,
+	.about__text,
+	.button,
+	.footer-main__copy {
+		@include adaptiv-font(16, 14);
+	}
+	.background-icon {
+		width: 30px;
+		height: 28px;
+	}
+	.deposit-grid__item--left {
+		margin-left: 10px;
+	}
+	.footer-main__copy,
+	.footer-main__inner {
+		padding: 10px;
+	}
+	.plans__item-title {
+		margin-bottom: 25px;
+	}
+	.plans__title {
+		@include adaptiv-font(50, 26);
+	}
+	.plans__list,
+	.plans__price {
+		margin-bottom: 25px;
+	}
+	.plans__price-quantity {
+		line-height: 30px;
+		margin-bottom: 5px;
+	}
+	.referrals__title {
+		@include adaptiv-font(30, 24);
+		padding: 15px;
+	}
+	.referrals__text {
+		@include adaptiv-font(20, 16);
+		padding: 10px;
+	}
+}

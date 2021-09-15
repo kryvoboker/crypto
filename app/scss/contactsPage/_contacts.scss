@@ -1,6 +1,10 @@
 .contacts {
 	&__list {
 		padding: 20px;
+
+		.header-main__telegramm-link::before {
+			color: #000;
+		}
 	}
 	&__item:not(:last-child) {
 		margin-bottom: 20px;

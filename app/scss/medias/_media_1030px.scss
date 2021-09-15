@@ -1,0 +1,12 @@
+@media ($maw: 1030px) {
+	.deposit-grid,
+	.withdrawal-grid {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.deposit-grid__row,
+	.withdrawal-grid__row {
+		flex-grow: 0;
+		margin-bottom: 20px;
+	}
+}
