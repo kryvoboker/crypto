@@ -10,6 +10,7 @@
 
 		& p{
 			font-weight: 600;
+			margin-bottom: 10px;
 		}
 		& span {
 			font-weight: 400;
@@ -19,9 +20,6 @@
 		& .button {
 			width: 260px;
 			padding: 10px 5px;
-		}
-		& .button:focus {
-			background-color: $green;
 		}
 	}
 	&-list {

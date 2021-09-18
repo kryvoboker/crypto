@@ -11,9 +11,9 @@
 		width: 100%;
 		min-height: 500px;
 		height: 100%;
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		// background-position: center center;
+		// background-size: cover;
+		// background-repeat: no-repeat;
 	}
 	&__content {
 		flex: 0 1 470px;
@@ -68,6 +68,12 @@
 		transition: all 10s ease;
 		animation: logo_img_bg 10s infinite alternate;
 	}
+}
+.webp .logo__inner {
+	@include background-img('../img/logo/img_9.webp', no-repeat, cover, center center);
+}
+.no-webp .logo__inner {
+	@include background-img('../img/logo/img_9.jpg', no-repeat, cover, center center);
 }
 @keyframes logo_img_bg {
 	from {

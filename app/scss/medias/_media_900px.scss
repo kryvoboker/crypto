@@ -16,4 +16,29 @@
 	.question__row:last-child {
 		margin-left: 10px;
 	}
+	.room__body-inner {
+		row-gap: 5px;
+	}
+	.room__body-title {
+		line-height: 40px;
+		padding-top: 10px;
+		margin-bottom: 0;
+	}
+	.room__body-item-box {
+		flex-direction: column;
+		padding: 5px 10px;
+	}
+	.room__body-item-title {
+		flex-basis: auto;
+		margin-bottom: 5px;
+	}
+	.room__body-item-btn {
+		margin-bottom: 7px;
+	}
+	.room__body-item-title {
+		@include adaptiv-font(18, 16);
+	}
+	.room__body-item-text {
+		@include adaptiv-font(16, 14);
+	}
 }

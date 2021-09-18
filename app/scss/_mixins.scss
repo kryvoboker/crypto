@@ -1,8 +1,9 @@
 // =====================================МИКСИНЫ==============================
-@mixin background-img($file, $repeat ,$position...) {
+@mixin background-img($file, $repeat, $size, $position...) {
 	background-image: url($file);
 	background-position: $position;
 	background-repeat: $repeat;
+	background-size: $size;
 }
 @mixin adaptiv-font($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;

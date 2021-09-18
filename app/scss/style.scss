@@ -53,12 +53,14 @@
 @import 'clientRoom/addRewiev';
 @import 'clientRoom/settings';
 @import 'clientRoom/validatePassword';
+@import 'clientRoom/navRoomIcon.scss';
 // =====================================clientRoom-page=======================
 
 @import "mediaAnyHover";
 
 // =====================================medias================================
 @import "medias/media_1165px";
+@import "medias/media_1060px";
 @import "medias/media_1030px";
 @import "medias/media_1024px";
 @import "medias/media_1000px";
@@ -69,4 +71,5 @@
 @import "medias/media_600px";
 @import "medias/media_525px";
 @import "medias/media_415px";
+@import "medias/media_320px";
 // =====================================medias================================

@@ -19,6 +19,9 @@
 	.logo__title {
 		@include adaptiv-font(50, 40);
 	}
+	.webp .logo__inner {
+		@include background-img('../img/logo/img_9_medium.webp', no-repeat, cover, center center);
+	}
 	.menu-main__link,
 	.header-main__auth-link {
 		font-size: 20px;
@@ -72,5 +75,19 @@
 	.referrals__text {
 		@include adaptiv-font(20, 16);
 		padding: 10px;
+	}
+	.form__inner {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"first"
+			"second"
+			"third";
+	}
+	.room__inner {
+		grid-template-columns: 265px 1fr;
+	}
+	.room__balance-text,
+	.room__balance-link {
+		font-size: 14px;
 	}
 }

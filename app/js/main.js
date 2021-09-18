@@ -33,6 +33,7 @@
 
 // =====================================client-room(validatePassword)-page====
 @@include('./validatePassword.js');
+@@include('./navRoomIcon.js');
 // =====================================client-room(validatePassword)-page====
 
 @@include('./burgerMenu.js');

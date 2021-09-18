@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icons/telegram/icomoon.eot?d0sm4f");
-  src: url("../fonts/icons/telegram/icomoon.eot?d0sm4f#iefix") format("embedded-opentype"), url("../fonts/icons/telegram/icomoon.ttf?d0sm4f") format("truetype"), url("../fonts/icons/telegram/icomoon.woff?d0sm4f") format("woff"), url("../fonts/icons/telegram/icomoon.svg?d0sm4f#icomoon") format("svg");
+  src: url("../fonts/icons/icomoon.eot?l2xbnf");
+  src: url("../fonts/icons/icomoon.eot?l2xbnf#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?l2xbnf") format("truetype"), url("../fonts/icons/icomoon.woff?l2xbnf") format("woff"), url("../fonts/icons/icomoon.svg?l2xbnf#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,40 +24,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-telegram:before {
-  content: "\e900";
-}
-
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icons/icomoon.eot?et9e6c");
-  src: url("../fonts/icons/icomoon.eot?et9e6c#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?et9e6c") format("truetype"), url("../fonts/icons/icomoon.woff?et9e6c") format("woff"), url("../fonts/icons/icomoon.svg?et9e6c#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^=icon-],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon-triangle-down:before {
+  content: "\e901";
 }
 
 .icon-viber:before {
   content: "\e902";
 }
 
-.icon-triangle-down:before {
-  content: "\e901";
+.icon-telegram:before {
+  content: "\e900";
+}
+
+.icon-arrow_forward_ios:before {
+  content: "\e903";
 }
 
 * {
@@ -300,6 +280,7 @@ body.lock {
 .header {
   width: 100%;
   min-height: 76px;
+  z-index: 2;
 }
 
 .main {
@@ -371,6 +352,11 @@ body.lock {
 .button:active {
   color: #000;
   background-color: #fff;
+}
+
+.button:focus {
+  border: 1px solid #00ff08;
+  background-color: #00ff08;
 }
 
 .border-style {
@@ -696,9 +682,6 @@ body.lock {
   width: 100%;
   min-height: 500px;
   height: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .logo__content {
@@ -781,6 +764,20 @@ body.lock {
   transition: all 10s ease;
   -webkit-animation: logo_img_bg 10s infinite alternate;
           animation: logo_img_bg 10s infinite alternate;
+}
+
+.webp .logo__inner {
+  background-image: url("../img/logo/img_9.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp .logo__inner {
+  background-image: url("../img/logo/img_9.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @-webkit-keyframes logo_img_bg {
@@ -1400,6 +1397,7 @@ body.lock {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  padding-top: 30px;
 }
 
 .room__balance {
@@ -1530,6 +1528,7 @@ body.lock {
 
 .room__body-ref-text p {
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .room__body-ref-text span {
@@ -1543,10 +1542,6 @@ body.lock {
 .room__body-ref-text .button {
   width: 260px;
   padding: 10px 5px;
-}
-
-.room__body-ref-text .button:focus {
-  background-color: #00ff08;
 }
 
 .room__body-ref-list {
@@ -1668,10 +1663,6 @@ body.lock {
   font-size: 18px;
 }
 
-.room__body-item-btn:focus {
-  border: 1px solid #ff0000;
-}
-
 .room__body {
   /* The message box is shown when the user clicks on the password field */
   /* Add a green text color and a checkmark when the requirements are right */
@@ -1718,6 +1709,106 @@ body.lock {
   content: "✘";
 }
 
+.nav-room__icon {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: -6px;
+}
+
+.nav-room__icon span::before {
+  position: absolute;
+  right: 0;
+  font-family: "icomoon";
+  content: "\e903";
+  font-size: 30px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-room__icon span {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 5px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+39,e1e1e1+57,f6f6f6+100 */
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(39%, #f1f1f1), color-stop(57%, #e1e1e1), to(#f6f6f6));
+  background: -o-linear-gradient(top, #ffffff 0%, #f1f1f1 39%, #e1e1e1 57%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 39%, #e1e1e1 57%, #f6f6f6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#f6f6f6",GradientType=0 );
+  /* IE6-9 */
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 8px 0;
+  margin: 0 auto;
+}
+
+.nav-room__icon span.active {
+  border-radius: 20px 20px 0 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+  background: #4c4c4c;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#4c4c4c), color-stop(12%, #595959), color-stop(25%, #666666), color-stop(39%, #474747), color-stop(50%, #2c2c2c), color-stop(51%, #000000), color-stop(60%, #111111), color-stop(76%, #2b2b2b), color-stop(91%, #1c1c1c), to(#131313));
+  background: -o-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#4c4c4c", endColorstr="#131313",GradientType=0 );
+  /* IE6-9 */
+}
+
+.nav-room__icon--arrow-up {
+  z-index: 1;
+}
+
+.nav-room__icon--arrow-up span::before {
+  top: -31px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.nav-room__icon--arrow-up span.active::before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.nav-room__icon--arrow-down {
+  margin-bottom: 60px;
+}
+
+.nav-room__icon--arrow-down span::before {
+  bottom: -35px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.nav-room__icon--arrow-down span.active {
+  border-radius: 0 0 20px 20px;
+  margin-top: -18px;
+}
+
+.nav-room__icon--arrow-down span.active::before {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 @-webkit-keyframes logo_img {
   from {
     -webkit-transform: rotateY(0deg);
@@ -1758,6 +1849,29 @@ body.lock {
   .plans__price span {
     font-size: calc(40px + 15 * ((100vw - 280px) / 1220));
   }
+
+  .auth__inner {
+    grid-template-columns: minmax(300px, 500px);
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .header--client-room .header-main__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .room__body-inner {
+    grid-template-rows: auto 1fr auto 1fr;
+  }
+
+  .room__body-inner--rows-two {
+    grid-template-rows: auto 1fr;
+  }
 }
 
 @media (max-width: 1030px) {
@@ -1790,6 +1904,11 @@ body.lock {
   .header-main__telegramm-link,
   .footer-main__telegramm-link {
     margin-left: 30px;
+  }
+
+  .contacts__item .header-main__telegramm-link,
+  .contacts__item .footer-main__telegramm-link {
+    margin-left: 0;
   }
 }
 
@@ -1846,6 +1965,42 @@ body.lock {
   .question__row:last-child {
     margin-left: 10px;
   }
+
+  .room__body-inner {
+    row-gap: 5px;
+  }
+
+  .room__body-title {
+    line-height: 40px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .room__body-item-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px 10px;
+  }
+
+  .room__body-item-title {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-bottom: 5px;
+  }
+
+  .room__body-item-btn {
+    margin-bottom: 7px;
+  }
+
+  .room__body-item-title {
+    font-size: calc(16px + 2 * ((100vw - 280px) / 1220));
+  }
+
+  .room__body-item-text {
+    font-size: calc(14px + 2 * ((100vw - 280px) / 1220));
+  }
 }
 
 @media (max-width: 800px) {
@@ -1884,6 +2039,13 @@ body.lock {
 
   .logo__title {
     font-size: calc(40px + 10 * ((100vw - 280px) / 1220));
+  }
+
+  .webp .logo__inner {
+    background-image: url("../img/logo/img_9_medium.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .menu-main__link,
@@ -1952,9 +2114,51 @@ body.lock {
     font-size: calc(16px + 4 * ((100vw - 280px) / 1220));
     padding: 10px;
   }
+
+  .form__inner {
+    grid-template-columns: 1fr;
+    grid-template-areas: "first" "second" "third";
+  }
+
+  .room__inner {
+    grid-template-columns: 265px 1fr;
+  }
+
+  .room__balance-text,
+  .room__balance-link {
+    font-size: 14px;
+  }
+}
+
+@media (any-hover: hover) and (max-width: 690px) {
+  .header .menu-main__link:hover {
+    color: #1ed2f4;
+  }
+
+  .header .menu-main__link:hover::before {
+    border-color: #1ed2f4;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .header .header-main__auth-link:hover {
+    color: #1ed2f4;
+  }
+
+  .header .header-main__auth-link:hover::before {
+    border-color: #1ed2f4;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media (max-width: 690px) {
+  .header {
+    min-height: 46px;
+  }
+
   .menu__icon {
     z-index: 5;
     display: block;
@@ -1962,7 +2166,7 @@ body.lock {
     width: 30px;
     height: 18px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .menu__icon span,
@@ -2055,6 +2259,7 @@ body.lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 30px;
   }
 
   .menu-main__link,
@@ -2062,6 +2267,14 @@ body.lock {
   .header-main__telegramm-link::before,
   .footer-main__telegramm-link::before {
     color: #fff;
+  }
+
+  .header-main__auth-link.active {
+    color: #1ed2f4;
+  }
+
+  .header-main__auth-link.active::before {
+    border-color: #1ed2f4;
   }
 
   .header-main__row:last-child,
@@ -2097,6 +2310,14 @@ body.lock {
   .menu-main__item:first-child,
   .menu-main__item:last-child {
     margin: 0;
+  }
+
+  .menu-main__link.active {
+    color: #1ed2f4 !important;
+  }
+
+  .menu-main__link.active::before {
+    border-color: #1ed2f4;
   }
 
   .statistic__inner {
@@ -2157,6 +2378,27 @@ body.lock {
   .referrals__title--fifth {
     margin: 0;
   }
+
+  .nav-room__icon {
+    display: block;
+  }
+
+  .room__inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .room__balance {
+    display: none;
+  }
+
+  .room__balance-item:first-child {
+    margin-bottom: 10px;
+  }
+
+  .room__balance-title {
+    margin: 10px 0 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2187,6 +2429,22 @@ body.lock {
   .footer-main__row:first-child {
     margin-bottom: 30px;
   }
+
+  .webp .logo__inner {
+    background-image: url("../img/logo/img_9_small.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 320px) {
+  .webp .logo__inner {
+    background-image: url("../img/logo/img_9_more_small.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (any-hover: hover) {
@@ -2200,13 +2458,6 @@ body.lock {
             transform: scale(1);
   }
 
-  .header-main__telegramm-link:hover::before,
-  .footer-main__telegramm-link:hover::before,
-  .contacts__link--viber:hover::before,
-  .contacts__link:hover {
-    color: #fff;
-  }
-
   .header-main__auth-link:hover {
     color: #fff;
   }
@@ -2217,24 +2468,32 @@ body.lock {
             transform: scale(1);
   }
 
+  .header-main__telegramm-link:hover::before,
   .footer-main__telegramm-link:hover::before {
-    color: #1ed2f4;
+    color: #fff;
   }
 
-  .header-main__auth-link--center:first-child:hover {
+  .header--client-room .header-main__auth-link--center:first-child:hover {
     color: #00ff08;
   }
 
-  .header-main__auth-link--center:first-child:hover::before {
+  .header--client-room .header-main__auth-link--center:first-child:hover::before {
     border-color: #00ff08;
   }
 
-  .header-main__auth-link--center:last-child:hover {
+  .header--client-room .header-main__auth-link--center:last-child:hover {
     color: #ff0000;
   }
 
-  .header-main__auth-link--center:last-child:hover::before {
+  .header--client-room .header-main__auth-link--center:last-child:hover::before {
     border-color: #ff0000;
+  }
+
+  .footer-main__telegramm-link:hover::before,
+  .contacts__item .header-main__telegramm-link:hover::before,
+  .contacts__link--viber:hover::before,
+  .contacts__link:hover {
+    color: #1ed2f4;
   }
 
   .header-main__lang-img:hover,
@@ -2285,8 +2544,7 @@ body.lock {
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.51);
   }
 
-  .room__body-ref-text .button:hover,
-  .room__body-item-btn:hover {
+  .button:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
 

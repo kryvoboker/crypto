@@ -20,6 +20,7 @@ body {
 .header {
 	width: 100%;
 	min-height: 76px;
+	z-index: 2;
 }
 .main {
 	flex: 1 0 auto;
@@ -75,6 +76,10 @@ body {
 	&:active {
 		color: #000;
 		background-color: #fff;
+	}
+	&:focus {
+		border: 1px solid $green;
+		background-color: $green;
 	}
 }
 .border-style {

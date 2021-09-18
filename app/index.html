@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Гланая</title>
 	@@include('./parts/_headLinks.html')
+	<script src="js/modernizr-custom.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,8 @@
 		<main class="main">
 			<section class="logo">
 				<div class="container">
-					<div class="logo__inner" style="background-image: url('img/logo/img_9.jpg');">
+					<!-- <div class="logo__inner" style="background-image: url('img/logo/img_9.jpg');"> -->
+					<div class="logo__inner">
 						<div class="logo__content">
 							<h1 class="logo__title">Какое-то название сайта...
 								<span class="txt-rotate" data-period="2000"
@@ -43,22 +45,38 @@
 				<div class="container">
 					<div class="statistic__inner border-style">
 						<div class="statistic__item">
-							<img class="statistic__img" src="img/icons/statistic/humans.png" alt="">
+							​<picture>
+								<source srcset="img/icons/statistic/humans_medium.png" media="(min-width: 768px)">
+								<source srcset="img/icons/statistic/humans_small.png" media="(min-width: 425px)">
+								<img class="statistic__img" src="img/icons/statistic/humans.png" alt="">
+							</picture>
 							<h2 class="statistic__title">Инвесторов</h2>
 							<p class="statistic__counts">587</p>
 						</div>
 						<div class="statistic__item">
-							<img class="statistic__img" src="img/icons/statistic/money.png" alt="">
+							<picture>
+								<source srcset="img/icons/statistic/money_medium.png" media="(min-width: 768px)">
+								<source srcset="img/icons/statistic/money_small.png" media="(min-width: 425px)">
+								<img class="statistic__img" src="img/icons/statistic/money.png" alt="">
+							</picture>
 							<h2 class="statistic__title">Инвестировано</h2>
 							<p class="statistic__counts">682034</p>
 						</div>
 						<div class="statistic__item">
-							<img class="statistic__img" src="img/icons/statistic/wallet.png" alt="">
+							<picture>
+								<source srcset="img/icons/statistic/wallet_medium.png" media="(min-width: 768px)">
+								<source srcset="img/icons/statistic/wallet_small.png" media="(min-width: 425px)">
+								<img class="statistic__img" src="img/icons/statistic/wallet.png" alt="">
+							</picture>
 							<h2 class="statistic__title">Выплачено</h2>
 							<p class="statistic__counts">646827</p>
 						</div>
 						<div class="statistic__item">
-							<img class="statistic__img" src="img/icons/statistic/work_4.png" alt="">
+							<picture>
+								<source srcset="img/icons/statistic/work_4_medium.png" media="(min-width: 768px)">
+								<source srcset="img/icons/statistic/work_4_small.png" media="(min-width: 425px)">
+								<img class="statistic__img" src="img/icons/statistic/work_4.png" alt="">
+							</picture>
 							<h2 class="statistic__title">Работаем дней</h2>
 							<p class="statistic__counts">987</p>
 						</div>

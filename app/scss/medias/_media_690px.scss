@@ -1,4 +1,7 @@
 @media($maw: 690px) {
+	.header {
+		min-height: 46px;
+	}
 	.menu__icon {
 		z-index: 5;
 		display: block;
@@ -6,7 +9,7 @@
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
-		margin-top: 30px;
+		margin-top: 15px;
 	}
 	.menu__icon span,
 	.menu__icon::before,
@@ -65,11 +68,18 @@
 	}
 	.menu-main__list {
 		flex-direction: column;
+		margin-top: 30px;
 	}
 	.menu-main__link,
 	.header-main__auth-link,
 	.header-main__telegramm-link::before {
 		color: #fff;
+	}
+	.header-main__auth-link.active {
+		color: $blue;
+	}
+	.header-main__auth-link.active::before {
+		border-color: $blue;
 	}
 	.header-main__row:last-child {
 		flex-direction: column;
@@ -92,6 +102,12 @@
 		&:last-child {
 			margin: 0;
 		}
+	}
+	.menu-main__link.active {
+		color: $blue !important;
+	}
+	.menu-main__link.active::before {
+		border-color: $blue;
 	}
 	.statistic__inner {
 		padding: 20px;
@@ -140,5 +156,21 @@
 	.referrals__title--third,
 	.referrals__title--fifth {
 		margin: 0;
+	}
+	.nav-room__icon {
+		display: block;
+	}
+	.room__inner {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+	}
+	.room__balance {
+		display: none;
+	}
+	.room__balance-item:first-child {
+		margin-bottom: 10px;
+	}
+	.room__balance-title {
+		margin: 10px 0 0;
 	}
 }

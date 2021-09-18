@@ -13,7 +13,7 @@ let path = {
 	app: {
 		html: [appFolder + "/*.html", "!" + appFolder + "/_*.html"],
 		css: appFolder + "/scss/style.scss",
-		js: appFolder + "/js/main.js",
+		js: [appFolder + "/js/main.js", appFolder + "/js/modernizr-custom.js",],
 		img: appFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: appFolder + "/fonts/*.ttf",
 		iconFonts: appFolder + "/fonts/icons/**/*.*",

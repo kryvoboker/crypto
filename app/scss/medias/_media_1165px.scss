@@ -11,4 +11,9 @@
 	.plans__price span {
 		@include adaptiv-font(55, 40);
 	}
+	.auth__inner {
+		grid-template-columns: minmax(300px, 500px);
+		grid-template-rows: auto auto;
+		row-gap: 30px;
+	}
 }
