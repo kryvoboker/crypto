@@ -1,0 +1,5 @@
+@media($maw: 320px) {
+	.webp .logo__inner {
+		@include background-img('../img/logo/img_9_more_small.webp', no-repeat, cover, center center);
+	}
+}

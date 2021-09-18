@@ -1,0 +1,12 @@
+@media ($maw: 1060px) {
+	.header--client-room .header-main__inner {
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.room__body-inner {
+		grid-template-rows: auto 1fr auto 1fr;
+	}
+	.room__body-inner--rows-two {
+		grid-template-rows: auto 1fr;
+	}
+}
