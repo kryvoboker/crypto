@@ -1480,7 +1480,7 @@ body.lock {
 .room__body-inner {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 1fr 60px 1fr;
+  grid-template-rows: 60px auto 60px 1fr;
   row-gap: 30px;
 }
 
@@ -1866,7 +1866,7 @@ body.lock {
   }
 
   .room__body-inner {
-    grid-template-rows: auto 1fr auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
   }
 
   .room__body-inner--rows-two {
@@ -2091,7 +2091,8 @@ body.lock {
     margin-bottom: 25px;
   }
 
-  .plans__title {
+  .plans__title,
+  .lost__title {
     font-size: calc(26px + 24 * ((100vw - 280px) / 1220));
   }
 

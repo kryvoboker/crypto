@@ -57,7 +57,8 @@
 	.plans__item-title {
 		margin-bottom: 25px;
 	}
-	.plans__title {
+	.plans__title,
+	.lost__title {
 		@include adaptiv-font(50, 26);
 	}
 	.plans__list,

@@ -2,7 +2,7 @@
 	&__body-inner {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 60px 1fr 60px 1fr;
+		grid-template-rows: 60px auto 60px 1fr;
 		row-gap: 30px;
 	}
 	&__body-title {
